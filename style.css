@@ -1,3 +1,4 @@
+
 :root{
     --beige: #FBEFD1;
     --green: #C7E2BF;
@@ -5,5 +6,9 @@
 }
 
 body{
-    background-color: lightblue;
+  background-color: lightblue;
+}
+
+body {
+  background-color: lightblue;
 }

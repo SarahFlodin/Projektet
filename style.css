@@ -1,3 +1,12 @@
 body {
   background-color: lightblue;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: blueviolet;
+  height: 200px;
+  width: 200px;
+}

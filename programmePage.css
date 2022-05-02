@@ -1,0 +1,13 @@
+:root{
+    --beige: #FBEFD1;
+    --green: #C7E2BF;
+    --darkgreen: #62A47C;
+}
+
+body{
+    width: 390px;
+}
+
+div {
+    border:  3px solid black;
+}

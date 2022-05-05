@@ -48,10 +48,13 @@ function createCountryButtons (COUNTRYBUTTON) {
         const button = document.createElement("button");
         button.innerText = ` ${COUNTRYBUTTON[i].name} `;
         button.addEventListener("click", function() {
-            console.log(i)
+            let foundCities = filterButtons (i);
+            createFilterElements (foundCities);
         })
         countryButtons.appendChild(button);
         }
 
 }
-    
+
+createCountryButtons (COUNTRYBUTTON);
+

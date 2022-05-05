@@ -10,9 +10,11 @@ function buildFooter(){
         aboutUsImage.src = `./Images/${ABOUTUS[i].image}`;
         aboutUsImages.innerHTML =  `${ABOUTUS[i].name}`;
         aboutUs.append(aboutUsImages);
+        aboutUsImages.append(image);
+        image.style.height = "5vw"
+        image.style.borderRadius = "50%"
         aboutUsImages.append(aboutUsImage);
-        aboutUsImage.style.height = "5vw"
-        aboutUsImage.style.borderRadius = "50%"
+        aboutUsImage.classList.add("aboutUsImage");
     }
     return aboutUs;
 }

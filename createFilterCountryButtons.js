@@ -14,14 +14,8 @@ function createFilterElements (cities) {
             let image = document.createElement("img");
             div.textContent = `${cities[i].name}`;
             image.src = `./Images/${cities[i].imagesNormal[0]}`;
-            image.style.height = "5vw"
+        image.style.height = "5vw"
             div.append (image)
             citiesDiv.append(div);
         }
 }
-            div.textContent = `${cities[i].name}`;
-            citiesDiv.append(div);
-            
-        }
-}
-

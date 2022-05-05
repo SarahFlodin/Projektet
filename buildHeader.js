@@ -1,6 +1,8 @@
-function getMyHeader() {
-    var header = document.getElementById('header');
-      return document.getElementById('utlandsstudierLight.png');
-    }
-getMyHeader()
-  
+"use strict"
+function buildHeader(){
+  let header = document.getElementById("header");
+  let headerImage = document.createElement("img");
+      headerImage.src = `./Images/utlandsstudierLight.png`;
+    header.append(headerImage)
+  }
+ buildHeader();

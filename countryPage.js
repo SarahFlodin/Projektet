@@ -3,7 +3,7 @@ topMenu ()
 
 add ()
 
-countryButtons()
+createCountryButtons (COUNTRYBUTTON);
 
 templateHtml
 

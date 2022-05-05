@@ -11,5 +11,20 @@ body{
 }
 
 div {
+    display: flex;
+    flex-direction: column;
     border: 3px solid black;
+}
+
+#studentOne, #studentTwo, #studentThree {
+    flex-direction: row;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+img #earlierStudents{
+    height: 8vw;
+    padding: 10px;
 }

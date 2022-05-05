@@ -25,11 +25,10 @@ div {
     align-items: center;
     font-size: 14px;
 }
+
 #studentOne img {
     height: 100%;
     width: 100%;
-    padding: 10px;
-}
 
 #studentTwo img {
     height: 100%;

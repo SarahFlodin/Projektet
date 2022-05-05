@@ -15,9 +15,14 @@ function buildFooter(){
         image.src = `./Images/${ABOUTUS[i].image}`;
         aboutUsImages.innerHTML =  `${ABOUTUS[i].name}`;
         aboutUs.append(aboutUsImages);
+<<<<<<< Updated upstream
         aboutUsImages.append(image);
         image.style.height = "5vw"
         image.style.borderRadius = "50%"
+=======
+        aboutUsImages.append(aboutUsImage);
+        aboutUsImage.classList.add("aboutUsImage");
+>>>>>>> Stashed changes
     }
     return aboutUs;
 }

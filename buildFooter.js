@@ -11,8 +11,6 @@ function buildFooter(){
         aboutUsImages.innerHTML =  `${ABOUTUS[i].name}`;
         aboutUs.append(aboutUsImages);
         aboutUsImages.append(aboutUsImage);
-        aboutUsImage.style.height = "5vw"
-        aboutUsImage.style.borderRadius = "50%"
     }
     return aboutUs;
 }

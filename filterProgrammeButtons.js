@@ -15,7 +15,3 @@ function createFilterProgrammeElements (subjects){
       subjectsDiv.append(div);
    }
 }
-
-
-
-

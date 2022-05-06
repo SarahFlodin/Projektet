@@ -23,8 +23,28 @@ div {
     padding: 5px;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
 }
-img #earlierStudents{
-    height: 8vw;
+
+#studentOne img {
+    height: 100%;
+    width: 100%;
+}
+
+#studentTwo img {
+    height: 100%;
+    width: 100%;
     padding: 10px;
+}
+
+#studentThree img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.aboutUsImage {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }

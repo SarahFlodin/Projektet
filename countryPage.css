@@ -5,9 +5,19 @@
 }
 
 body {
+  margin: 0px;
   width: 390px;
+  background-color: var(--beige);
 }
 
 div {
+  display: flex;
+  flex-direction: column;
   border: 3px solid black;
+}
+
+.aboutUsImage {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }

@@ -45,6 +45,4 @@ function createFieldButtons (FIELDSBUTTON) {
         fieldButtons.appendChild(button);
       } 
 }
-
-createFilterProgrammeElements (FIELDSBUTTON);
 createFieldButtons (FIELDSBUTTON);

@@ -2,7 +2,7 @@
 
 function filterProgrammeButtons(id) {
   
-   return PROGRAMMES.filter(programme => programme.subjectID == id);
+   return SUBJECTS.filter(subject => subject.programmeID == id);
 
 }
 

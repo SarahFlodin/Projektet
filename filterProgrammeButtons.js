@@ -1,7 +1,6 @@
 "use script"
 
 function filterProgrammeButtons(id) {
-  
    return SUBJECTS.filter(subject => subject.programmeID == id);
 
 }

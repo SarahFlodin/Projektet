@@ -42,8 +42,18 @@ function createFilterProgrammeElements (FIELDSBUTTON) {
         button.addEventListener("click", function() {
            let foundProgramme = filterProgrammeButtons(i);
            createFilterProgramme (foundProgramme);
+          
+function createFieldButtons (FIELDSBUTTON) {
+    for (let i = 0; i < FIELDSBUTTON.length; i ++) {
+        const button = document.createElement("button");
+        button.innerText = `${FIELDSBUTTON[i].name}`;
+        button.addEventListener("click", function() {
+           console.log(i)
+          
         })
         fieldButtons.appendChild(button);
       } 
 }
+
 createFilterProgrammeElements (FIELDSBUTTON);
+createFieldButtons (FIELDSBUTTON);

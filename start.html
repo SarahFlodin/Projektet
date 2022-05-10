@@ -11,18 +11,24 @@
     <div id="container">
 
       <div id="header">
-        <h1>UTLANDSSTUDIER.se</h1>
       </div>
 
       <div id="navigationButtons">
         <p>Intresserad av att studera utomlands? <br><br>
           Vi ger dig information om att studera utomlands för att du ska hitta rätt land och utbildning som passar dig. Här får du reda på allt om studerna samt aktiviteter och information om ditt studieland.</p>
-          <button id="subjectButton">Välj ämne</button>
-          <button id="programmeButton">Välj program</button>
+          <button id="subjectButton" onclick="location.href='countryPage.html'">Välj ämne</button>
+          <button id="programmeButton" onclick="location.href='programmePage.html'">Välj program</button>
       </div>
 
       <div id="earlierStudents">
         <h3>Tidigare Studenter</h1>
+          <div id="studentOne"> Robin har utforskat många länder tack vare utlandsstudier. Han har varit överallt från England till Australien och han rekomenderar verkligen att ta chansen! <br><br>
+            -Mina tips är: hitta närmaste klubb och vänner kommer på köpet! <img src="Images/studentOne.jpg" alt="student riding zipline"> </div>
+            
+          <div id="studentTwo">Jag älskar att vara nära sina nära och kära men ville samtidigt uppleva ny kultur och testa på hur det är att studera utomlands. Jag valde att åka till England med min bästa vän över en termin. <br><br>
+            -Mina tips är: åk med någon som står dig nära så det finns en trygghet.<img src="Images/studentTwo.jpg" alt="Graduation Student"></div>
+          <div id="studentThree"> Jag ville helst inte åka utomlands i början men då kursen jag ville gå enbart erbjöds i Australien insåg jag att det skulle vara värt det. <br><br>
+            -Mina tips är: vara öppen för möjligheter. Även om det är läskigt först så öppnar det nya dörrar för framtiden. <img src="Images/studentThree.jpg" alt="Playing beachball"></div>
       </div>
 
       <div id="footer">
@@ -32,5 +38,9 @@
     </div>
 
     <script src="database.js"></script>
+    <script src="aboutUsDatabase.js"></script>
+    <script src="buildFooter.js"></script>
+    <script src="buildHeader.js"></script>
+    <script src="aboutUsDatabase.js"></script>
   </body>
 </html>

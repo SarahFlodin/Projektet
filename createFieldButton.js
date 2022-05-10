@@ -36,10 +36,11 @@ const fieldButtons = document.getElementById("fieldButtons");
 
 function createFieldButtons (FIELDSBUTTON) {
     for (let i = 0; i < FIELDSBUTTON.length; i ++) {
-        const button = document.createElement("button");
+        let button = document.createElement("button");
         button.innerText = `${FIELDSBUTTON[i].name}`;
         button.addEventListener("click", function() {
-           console.log(i)
+          let foundProgrammes = filterProgrammeButtons (i);
+          createFilterProgrammeElements (foundProgrammes)
         })
         fieldButtons.appendChild(button);
       } 

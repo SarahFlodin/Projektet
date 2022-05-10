@@ -19,3 +19,4 @@ function createFilterElements (cities) {
             citiesDiv.append(div);
         }
 }
+

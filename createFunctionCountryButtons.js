@@ -41,7 +41,7 @@ const COUNTRYBUTTON = [
 ];
 
 
-const countryButtons = document.getElementById("countryButtons");
+let countryButtons = document.getElementById("countryButtons");
 
 function createCountryButtons (COUNTRYBUTTON) {
     for (let i = 0; i < COUNTRYBUTTON.length; i++) {

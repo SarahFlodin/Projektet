@@ -21,14 +21,26 @@ function filterProgrammeButtons(buttonObject, FIELDSBUTTON) {
 
 
 function createFilterProgrammeElements (subjects){
-   console.log (subjects);
    
+
    let subjectsDiv = document.querySelector("#subjects");
    subjectsDiv.innerHTML = "";
 
     for (let i = 0; i < subjects.length; i++) {
-     let div = document.createElement("div");
-     div.innerHTML = `<h3>${subjects[i].name}</h3> <p> Nivå:${subjects[i].level}</p> <br><br> <p>Stad:${subjects[i].universityID}</p>`;
+      function findUnibyId(universitet) {
+         return subjects[i].universityID == universitet.id;
+      } 
+
+      let div = document.createElement("div");
+      const level = LEVELS[subjects[i].level -1] 
+      const uni = UNIVERSITIES.find(findUnibyId)
+      
+      div.innerHTML = `
+         <h3>${subjects[i].name}</h3> 
+         <p> Nivå: ${level}</p>
+         <br><br> 
+         <p>Universitet:${uni.name}</p>`;
       subjectsDiv.append(div);
    }
 }
+

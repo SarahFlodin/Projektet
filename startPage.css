@@ -1,50 +1,64 @@
-:root{
-    --beige: #FBEFD1;
-    --green: #C7E2BF;
-    --darkgreen: #62A47C;
+:root {
+  --beige: #fbefd1;
+  --green: #c7e2bf;
+  --darkgreen: #62a47c;
 }
 
-body{
-    margin: 0px;
-    width: 390px;
-    background-color: var(--beige);
+body {
+  margin: 0px;
+  width: 390px;
+  background-color: var(--beige);
 }
 
 div {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
 }
 
-#studentOne, #studentTwo, #studentThree {
-    flex-direction: row;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
+#studentOne,
+#studentTwo,
+#studentThree {
+  flex-direction: row;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 
 #studentOne img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 #studentTwo img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 }
 
 #studentThree img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 }
 
 .aboutUsImage {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+button {
+  background-color: #c7e2bf;
+  border-radius: 20px;
+  transition: 1s;
+  font-family: Monospace;
+}
+
+button:active {
+  transition: 1s;
+  box-shadow: black;
 }

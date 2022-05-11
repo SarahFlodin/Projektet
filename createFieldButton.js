@@ -1,33 +1,40 @@
 "use script";
 
 const FIELDSBUTTON = [
-   {
-     "id": 0,
-     "name": "Matematik"
-   },
+  {
+    "id": 0,
+    "name": "Matematik",
+    "selected": false
+  },
 
   { "id": 1,
-    "name": "Teknik"
+    "name": "Teknik",
+    "selected": false
   },
 
  { "id": 2,
-   "name": "Juridik"
+   "name": "Juridik",
+   "selected": false
  },
 
   { "id": 3,
-   "name": "Medicin"
+   "name": "Medicin",
+   "selected": false
   },
 
  { "id": 4,
-   "name": "Sociologi"
+   "name": "Sociologi",
+   "selected": false
  },
 
   { "id": 5,
-   "name": "Filosofi"
+   "name": "Filosofi",
+   "selected": false
   },
 
    { "id": 6,
-   "name": "Design"
+   "name": "Design",
+   "selected": false
    },
 
 ];
@@ -36,12 +43,15 @@ const fieldButtons = document.getElementById("fieldButtons");
 
 function createFieldButtons (FIELDSBUTTON) {
     for (let i = 0; i < FIELDSBUTTON.length; i ++) {
-        const button = document.createElement("button");
+        let button = document.createElement("button");
         button.innerText = `${FIELDSBUTTON[i].name}`;
         button.addEventListener("click", function() {
-           console.log(i)
+          let foundProgrammes = filterProgrammeButtons (FIELDSBUTTON[i], FIELDSBUTTON);
+          console.log(FIELDSBUTTON);
+          createFilterProgrammeElements (foundProgrammes);
         })
         fieldButtons.appendChild(button);
       } 
 }
 createFieldButtons (FIELDSBUTTON);
+

@@ -1,3 +1,4 @@
+"use strict"
 const ABOUTUS = [
     {
         "id": 0,

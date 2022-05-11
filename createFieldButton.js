@@ -55,3 +55,11 @@ function createFieldButtons (FIELDSBUTTON) {
 }
 createFieldButtons (FIELDSBUTTON);
 
+function pressedButton(button) {
+  
+}
+
+
+button.addEventListener('click', () => {
+  button.classList.toggle('active');
+});

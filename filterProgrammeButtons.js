@@ -32,7 +32,7 @@ function createFilterProgrammeElements (programmes){
       } 
 
    let div = document.createElement("div");
-   const level = LEVELS[programmes[i].level -1] 
+   const level = LEVELS[programmes[i].level] 
    const uni = UNIVERSITIES.find(findUnibyId)
       
    div.innerHTML = `

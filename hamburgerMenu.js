@@ -19,18 +19,25 @@ const HAMBURGER = [
 ]
 
 function buildHamburger(){
-
-    let menuHamburger = document.getElementById("hamburger");
-
+    let menuHamburger = document.getElementById("myNav");
     for (let i = 0; i < HAMBURGER.length; i++){
-        let hM = document.createElement("div");
-        let hamburgEr = document.createElement("link")
-        hamburgEr.src = `${HAMBURGER[i].url}`;
-        hM.innerHTML =  `${HAMBURGER[i].text}`;
-        menuHamburger.append(hamburgEr);
-        hamburgEr.append(hM);
+        let hamburgerContent = document.createElement("div");
+        hamburgerContent.classList.add("hamburgerContent");
+        let content = document.createElement("a")
+        content.href = `${HAMBURGER[i].url}`;
+        hamburgerContent.textContent =  `${HAMBURGER[i].text}`;
+        menuHamburger.append(hamburgerContent);
+        hamburgerContent.append(content);
     }
     return menuHamburger;
 }
+
+function openHamburger() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeHamburger() {
+    document.getElementById("myNav").style.width = "0%";
+  }
 
 buildHamburger();

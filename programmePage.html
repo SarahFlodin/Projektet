@@ -9,7 +9,13 @@
   </head>
   <body>
     <div id="container">
-      <div id="header" onclick="location.href='start.html'"></div>()
+      <div id="header" onclick="location.href='start.html'"></div>
+      <div id="hamburger">
+        <span id="hamburgerMenu" style="font-size:30px;cursor:pointer" onclick="openHamburger()">&#9776;</span>
+         <div id="myNav" class="overlay">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeHamburger()">&times;</a>
+         </div>    
+       </div>
       <div><h3>Ämnen</h3></div>
       <div id="fieldButtons"></div>
       
@@ -24,6 +30,7 @@
     <script src="database.js"></script>
     <script src="filterProgrammeButtons.js"></script>
     <script src="aboutUsDatabase.js"></script>
+    <script src="hamburgerMenu.js"></script>
     <script src="buildFooter.js"></script>
     <script src="buildHeader.js"></script>
     <script src="createFieldButton.js"></script>

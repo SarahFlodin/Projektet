@@ -11,11 +11,14 @@
   <body>
     <div id="container">
 
-      <div id="header">
-        <div id="hamburger"></div>
+      <div id="header"></div>
+      <div id="hamburger">
+       <span id="hamburgerMenu" style="font-size:30px;cursor:pointer" onclick="openHamburger()">&#9776;</span>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeHamburger()">&times;</a>
+        </div>    
       </div>
       
-      <div class="main">Öpnna overlay</div>
       <div id="navigationButtons">
         <p>Intresserad av att studera utomlands? <br><br>
           Vi ger dig information om att studera utomlands för att du ska hitta rätt land och utbildning som passar dig. Här får du reda på allt om studerna samt aktiviteter och information om ditt studieland.</p>
@@ -42,7 +45,6 @@
 
 
     <script src="database.js"></script>
-    <script src="createOverlay.js" ></script>
     <script src="aboutUsDatabase.js"></script>
     <script src="buildFooter.js"></script>
     <script src="buildHeader.js"></script>

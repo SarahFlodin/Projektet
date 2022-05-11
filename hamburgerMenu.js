@@ -19,7 +19,9 @@ const HAMBURGER = [
 ]
 
 function buildHamburger(){
-    let menuHamburger = document.getElementById("hamburgerMenu");
+
+    let menuHamburger = document.getElementById("hamburger");
+
     for (let i = 0; i < HAMBURGER.length; i++){
         let hM = document.createElement("div");
         let hamburgEr = document.createElement("link")

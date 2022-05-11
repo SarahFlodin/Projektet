@@ -15,9 +15,8 @@ function filterProgrammeButtons(buttonObject, FIELDSBUTTON) {
    let idArray = fieldArray.map(element => element.id);
 
    return PROGRAMMES.filter(programme => idArray.includes(programme.subjectID));
-   
-}
 
+}
 
 
 function createFilterProgrammeElements (programmes){
@@ -32,6 +31,7 @@ function createFilterProgrammeElements (programmes){
       } 
 
    let div = document.createElement("div");
+   div.classList.add("programmesBox")
    const level = LEVELS[programmes[i].level] 
    const uni = UNIVERSITIES.find(findUnibyId)
       

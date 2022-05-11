@@ -47,7 +47,6 @@ function createFieldButtons (FIELDSBUTTON) {
         button.innerText = `${FIELDSBUTTON[i].name}`;
         button.addEventListener("click", function() {
           let foundProgrammes = filterProgrammeButtons (FIELDSBUTTON[i], FIELDSBUTTON);
-          console.log(FIELDSBUTTON);
           createFilterProgrammeElements (foundProgrammes);
         })
         fieldButtons.appendChild(button);

@@ -13,7 +13,6 @@ body {
 div {
   display: flex;
   flex-direction: column;
-  border: 3px solid black;
 }
 
 .aboutUsImage {
@@ -28,9 +27,27 @@ div {
 }
 
 .aboutUsImage {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+#header{
+  padding: 30px;
+}
+
+#footer{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#footer > div {
+  margin: 15px;
+  align-items: center;
+}
+
+.programmesBox {
+  border: black solid 2px;
+  margin: 10px;
 }
 
 button {
@@ -112,3 +129,4 @@ button:hover {
     right: 35px;
   }
 }
+

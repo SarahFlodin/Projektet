@@ -25,7 +25,7 @@ function buildHamburger(){
         hamburgerContent.classList.add("hamburgerContent");
         let content = document.createElement("a")
         content.href = `${HAMBURGER[i].url}`;
-        hamburgerContent.textContent =  `${HAMBURGER[i].text}`;
+        content.textContent =  `${HAMBURGER[i].text}`;
         menuHamburger.append(hamburgerContent);
         hamburgerContent.append(content);
     }

@@ -48,6 +48,7 @@ function createFieldButtons (FIELDSBUTTON) {
         button.addEventListener("click", function() {
           let foundProgrammes = filterProgrammeButtons (FIELDSBUTTON[i], FIELDSBUTTON);
           createFilterProgrammeElements (foundProgrammes);
+          button.classList.toggle("button-active");
         })
         fieldButtons.appendChild(button);
       } 

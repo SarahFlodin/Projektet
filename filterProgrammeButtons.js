@@ -31,7 +31,9 @@ function createFilterProgrammeElements (programmes){
       } 
 
    let div = document.createElement("div");
+   div.addEventListener("click", clickProgramme)
    div.classList.add("programmesBox")
+   div.id = programmes[i].id
    const level = LEVELS[programmes[i].level] 
    const uni = UNIVERSITIES.find(findUnibyId)
       

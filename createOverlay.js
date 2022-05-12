@@ -3,10 +3,10 @@
 document.querySelector(".main").addEventListener("click", function(){ toggleOverlay()});
 
 function toggleOverlay(){
-    let overlayExists = document.querySelector(".overlay");
+    let overlayExists = document.querySelector(".programmeOverlay");
     console.log(overlayExists);
     if( overlayExists ){
-        document.querySelector(".overlay").remove();
+        document.querySelector(".programmeOverlay").remove();
     } else {
         document.body.append(createOverlay());
     }
@@ -23,4 +23,9 @@ function createOverlay(){
     overlay.append(text);
 
     return overlay;
+}
+
+function clickProgramme(event){
+    console.log(event);
+    let target = event.target.id;
 }

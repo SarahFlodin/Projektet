@@ -45,6 +45,13 @@ div {
     width: 50px;
 }
 
+.cityBox {
+  border: black solid 2px;
+  margin: 3px;
+  padding: 3px;
+}
+
+
 button {
   position: relative;
   padding: 0.5em 1em;
@@ -59,13 +66,11 @@ button:hover {
   background-color: #8ca684;
 }
 
-#hamburger > #hamburgerMenu {
-  display: flex;
-  justify-content: flex-end;
+#hamburger{
   background-color: var(--green);
 }
 
 #hamburgerMenu{
-  padding-right: 10px;
+  width: 68vw;
 }
 

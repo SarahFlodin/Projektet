@@ -51,6 +51,12 @@ div {
   margin: 10px;
 }
 
+/* gör att man inte kan klicka på p eller h3*/
+
+.programmesBox > h3, .programmesBox > p {
+  pointer-events: none; 
+}
+
 button {
   position: relative;
   padding: 0.5em 1em;
@@ -65,4 +71,13 @@ button {
   background-color: var(--darkgreen);
   inset: 1px;
   box-shadow: inset 0 0 10px #2e3b2f;
+}
+
+
+#hamburger{
+  background-color: var(--green);
+}
+
+#hamburgerMenu{
+  width: 68vw;
 }

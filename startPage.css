@@ -82,12 +82,10 @@ button:active {
 
 }
 
-#hamburger > #hamburgerMenu {
-  display: flex;
-  justify-content: flex-end;
+#hamburger{
   background-color: var(--green);
 }
 
 #hamburgerMenu{
-  padding-right: 10px;
+  width: 68vw;
 }

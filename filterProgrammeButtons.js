@@ -32,11 +32,15 @@ function createFilterProgrammeElements (programmes){
 
    let div = document.createElement("div");
    div.addEventListener("click", clickProgramme)
+      div.onclick = function openProgrammeOverlay() {
+         document.getElementById("programmeOverlay").style.width = "100%";
+       }
+
    div.classList.add("programmesBox")
    div.id = programmes[i].id
    const level = LEVELS[programmes[i].level] 
-   const uni = UNIVERSITIES.find(findUnibyId)
-      
+   const uni = UNIVERSITIES.find(findUnibyId);
+   
    div.innerHTML = `
       <h3>${programmes[i].name}</h3> 
       <p> Nivå: ${level}</p>

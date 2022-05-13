@@ -1,4 +1,4 @@
-"use strict";
+/* "use strict";
 
 document.querySelector(".main").addEventListener("click", function(){ toggleOverlay()});
 
@@ -23,9 +23,5 @@ function createOverlay(){
     overlay.append(text);
 
     return overlay;
-}
+} */
 
-function clickProgramme(event){
-    console.log(event);
-    let target = event.target.id;
-}

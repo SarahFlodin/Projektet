@@ -1,5 +1,5 @@
 function countryPage ()
-topMenu ()
+buildHeaderImage ()
 
 add ()
 
@@ -9,4 +9,4 @@ templateHtml
 
 add ()
 
-footer()
+buildFooter()

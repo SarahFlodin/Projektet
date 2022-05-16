@@ -1,5 +1,6 @@
 "use script";
 
+// SubjectArray
 const FIELDSBUTTON = [
   {
     "id": 0,
@@ -41,6 +42,7 @@ const FIELDSBUTTON = [
 
 const fieldButtons = document.getElementById("fieldButtons");
 
+// Knapparna till ämnen på ProgrammePage
 function createFieldButtons (FIELDSBUTTON) {
     for (let i = 0; i < FIELDSBUTTON.length; i ++) {
         let button = document.createElement("button");

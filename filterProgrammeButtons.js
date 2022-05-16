@@ -1,6 +1,6 @@
 "use script"
 
-
+// Bra namn på denna function. Denna filtrerar ämnesknapparna 
 function filterProgrammeButtons(buttonObject, FIELDSBUTTON) {
 
       if (buttonObject.selected) {
@@ -18,7 +18,8 @@ function filterProgrammeButtons(buttonObject, FIELDSBUTTON) {
 
 }
 
-
+// Tydlig
+// Skapar boxarna för programmen.
 function createFilterProgrammeElements (programmes){
    
 

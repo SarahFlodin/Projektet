@@ -1,11 +1,13 @@
 "use strict";
 
+// När man klickar på ett land filtreras städerna. 
 function filterButtons (id) {
     return CITIES.filter(city => city.countryID == id);
    
 }
 
-function createFilterElements (cities) {
+// Det är denna som skapar alla boxarna till städerna 
+function createCitiesFilterElements (cities) {
     console.log (cities);
     let citiesDiv = document.querySelector("#cities");
     citiesDiv.innerHTML = "";

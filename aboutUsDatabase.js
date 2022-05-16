@@ -1,4 +1,6 @@
 "use strict"
+
+// Om oss array som vi anropar i footer
 const ABOUTUS = [
     {
         "id": 0,

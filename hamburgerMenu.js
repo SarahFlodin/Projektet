@@ -1,5 +1,6 @@
 "use strict"
 
+// Arrayen till hamburgarmenyn
 const HAMBURGER = [
     {
         "id": 0,
@@ -17,7 +18,8 @@ const HAMBURGER = [
         "url": "programmePage.html",
     }
 ]
-
+// Tydlig
+// Bygger hela hamburgarmenyn
 function buildHamburger(){
     let menuHamburger = document.getElementById("myNav");
     for (let i = 0; i < HAMBURGER.length; i++){
@@ -31,13 +33,14 @@ function buildHamburger(){
     }
     return menuHamburger;
 }
-
+// Tydlig
+// Dessa två funktionerna öppnar/ stänger hamburgarmenyn 
 function openHamburger() {
     document.getElementById("myNav").style.width = "100%";
-  }
-  
-  function closeHamburger() {
+}
+// Tydlig
+function closeHamburger() {
     document.getElementById("myNav").style.width = "0%";
-  }
+}
 
 buildHamburger();

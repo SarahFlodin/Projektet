@@ -1,5 +1,7 @@
 "use strict";
 
+
+// Array av landknapparna 
 const COUNTRYBUTTON = [
     {
         "id": 0,
@@ -43,13 +45,14 @@ const COUNTRYBUTTON = [
 
 let countryButtons = document.getElementById("countryButtons");
 
+// skapar länderknapparna
 function createCountryButtons (COUNTRYBUTTON) {
     for (let i = 0; i < COUNTRYBUTTON.length; i++) {
         const button = document.createElement("button");
         button.innerText = ` ${COUNTRYBUTTON[i].name} `;
         button.addEventListener("click", function() {
             let foundCities = filterButtons (i);
-            createFilterElements (foundCities);
+            createCitiesFilterElements (foundCities);
         })
         countryButtons.appendChild(button);
         }

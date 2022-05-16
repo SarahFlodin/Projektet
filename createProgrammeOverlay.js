@@ -8,7 +8,15 @@ function clickProgramme(event){
     const text = document.createElement("h1");
     text.innerText = "Overlay";
 
+    let div = document.createElement("div");
+   div.addEventListener("click", clickProgramme)
+      div.onclick = function closeProgrammeOverlay() {
+         document.getElementById("programmeOverlay").style.width = "0%";
+       }
+       div.innerHTML = "&times;"
+
     programmeOverlay.append(text);
+    programmeOverlay.append(div);
 
     return programmeOverlay;
 }

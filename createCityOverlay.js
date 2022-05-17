@@ -1,9 +1,9 @@
 "use strict"
 
 function clickCity(event){
-
+console.log(event.target);
     let target = event.target.id;
-    console.log(target.id)
+    console.log(event.target.id)
 
     if (target == CITIES.id) {
     }
@@ -18,7 +18,7 @@ function clickCity(event){
 
     div.onclick = function closeCityOverlay() {
        document.getElementById("cityOverlay").style.width = "0%";
-       document.getElementById("cityOverlay").innerHTML = " "
+       document.getElementById("cityOverlay").innerHTML = " ";
      }
      div.innerHTML = "&times;"
 
@@ -38,6 +38,4 @@ function openCityOverlay() {
 function closeCityOverlay() {
   document.getElementById("cityOverlay").style.width = "0%";
 }
-
-clickCity();
 

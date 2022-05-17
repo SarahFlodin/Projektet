@@ -33,9 +33,10 @@ function createFilterProgrammeElements (programmes){
 
    let div = document.createElement("div");
    div.addEventListener("click", clickProgramme)
-      div.onclick = function openProgrammeOverlay() {
-         document.getElementById("programmeOverlay").style.width = "100%";
-       }
+   
+   div.onclick = function openProgrammeOverlay() {
+      document.getElementById("programmeOverlay").style.width = "100%";
+   }
 
    div.classList.add("programmesBox")
    div.id = programmes[i].id

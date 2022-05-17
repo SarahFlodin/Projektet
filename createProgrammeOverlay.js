@@ -13,7 +13,8 @@ function clickProgramme(event){
 
     let div = document.createElement("div");
     div.addEventListener("click", clickProgramme);
-      div.onclick = function closeProgrammeOverlay() {
+
+    div.onclick = function closeProgrammeOverlay() {
          document.getElementById("programmeOverlay").style.width = "0%";
          document.getElementById("programmeOverlay").innerHTML = " ";
         }
@@ -25,14 +26,18 @@ function clickProgramme(event){
       let aboutProgramme = document.createElement("div");
       let sumStudent = PROGRAMMES[target].localStudents + PROGRAMMES[target].exchangeStudents;
       let average = PROGRAMMES[target].successRate / PROGRAMMES[target].successRate.length;
+      let language = LANGUAGES.find(lang => lang.id == PROGRAMMES[target].language)
+      let level = LEVELS[PROGRAMMES[target].level];
 
       aboutProgramme.innerHTML = `
       <h3> Om programmet </h3>
-      <p> Nivå: ${PROGRAMMES[target].level} </p> 
-      <p> Språk: ${PROGRAMMES[target].language}</p>
+      <p> Nivå: ${level} </p> 
+      <p> Språk: ${language.name}</p>
       <p> Studenter: ${sumStudent}</p>
       <p> Antagningsbetyg: ${average} </p>
       `
+
+      review
    
     programmeOverlay.append(aboutProgramme);
    

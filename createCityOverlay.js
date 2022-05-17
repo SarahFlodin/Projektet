@@ -1,16 +1,21 @@
 "use strict"
 
 function clickCity(event){
-    console.log(event.target.id);
+
     let target = event.target.id;
+    console.log(target.id)
+
+    if (target == CITIES.id) {
+    }
    
    document.getElementById("cityOverlay")
     
-    const text = document.createElement("h1");
-    text.innerText = "Overlay";
+    const text = document.createElement("h2");
+    text.innerText = `${CITIES[target].name}`;
 
     let div = document.createElement("div");
- div.addEventListener("click", clickCity)
+    div.addEventListener("click", clickCity)
+
     div.onclick = function closeCityOverlay() {
        document.getElementById("cityOverlay").style.width = "0%";
        document.getElementById("cityOverlay").innerHTML = " "
@@ -18,8 +23,8 @@ function clickCity(event){
      div.innerHTML = "&times;"
 
 
-  cityOverlay.append(text);
-  cityOverlay.append(div);
+    cityOverlay.append(text);
+    cityOverlay.append(div);
     
 
     return cityOverlay;
@@ -34,5 +39,5 @@ function closeCityOverlay() {
   document.getElementById("cityOverlay").style.width = "0%";
 }
 
-clickCities();
+clickCity();
 

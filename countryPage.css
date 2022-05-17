@@ -47,6 +47,7 @@ div {
 }
 
 .cityBox {
+  background-color: #c7e2bf8a;
   border: black solid 2px;
   flex-direction: row;
   margin: 5px;
@@ -60,7 +61,7 @@ div {
 .cityBox > img {
   height: 50%;
   width: 50%;
-  
+
 }
 
 button {

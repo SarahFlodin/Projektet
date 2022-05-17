@@ -5,34 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="programmePage.css" />
-    <link rel="stylesheet" href="overlayStyle.css">
-    <link rel="stylesheet" href="programmeOverlay.css">
+    <link rel="stylesheet" href="overlayStyle.css" />
+    <link rel="stylesheet" href="programmeOverlay.css" />
     <title>Program</title>
   </head>
   <body>
     <div id="container">
       <div id="header" onclick="location.href='start.html'"></div>
       <div id="hamburger">
-        <span id="hamburgerMenu" style="font-size:30px;cursor:pointer" onclick="openHamburger()">&#9776;</span>
-         <div id="myNav" class="overlay">
-           <a href="javascript:void(0)" class="closebtn" onclick="closeHamburger()">&times;</a>
-         </div>    
-       </div>
+        <span
+          id="hamburgerMenu"
+          style="font-size: 30px; cursor: pointer"
+          onclick="openHamburger()"
+          >&#9776;</span
+        >
+        <div id="myNav" class="overlay">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeHamburger()"
+            >&times;</a
+          >
+        </div>
+      </div>
       <div><h3>Ämnen</h3></div>
       <div id="fieldButtons"></div>
-      
+
       <div id="programmes">
         <h3>Program</h3>
+        <h2>
+          Klicka på ett ämne och utforska vilka program du har möjlighet att
+          studera!
+        </h2>
       </div>
 
-      <div id ="programmeOverlay" class = "programmeOverlay"></div>
+      <div id="programmeOverlay" class="programmeOverlay"></div>
 
-      <div id=program></div>
+      <div id="program"></div>
 
       <div id="footer"></div>
     </div>
 
-    <script src="database.js"></script> 
+    <script src="database.js"></script>
     <script src="createOverlay.js"></script>
     <script src="filterProgrammeButtons.js"></script>
     <script src="aboutUsDatabase.js"></script>
@@ -41,6 +55,5 @@
     <script src="buildFooter.js"></script>
     <script src="buildHeader.js"></script>
     <script src="createFieldButton.js"></script>
-   
   </body>
 </html>

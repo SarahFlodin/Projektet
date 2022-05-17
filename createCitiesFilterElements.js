@@ -8,9 +8,10 @@ function filterButtons (id) {
 
 // Det är denna som skapar alla boxarna till städerna 
 function createCitiesFilterElements (cities) {
-    console.log (cities);
+
     let citiesDiv = document.querySelector("#cities");
     citiesDiv.innerHTML = "";
+    
         for (let i = 0; i < cities.length; i++) {
             let div = document.createElement("div");
             div.classList.add("cityBox");

@@ -12,8 +12,10 @@ function clickProgramme(event){
    div.addEventListener("click", clickProgramme)
       div.onclick = function closeProgrammeOverlay() {
          document.getElementById("programmeOverlay").style.width = "0%";
+         document.getElementById("programmeOverlay").innerHTML = " "
        }
        div.innerHTML = "&times;"
+
 
     programmeOverlay.append(text);
     programmeOverlay.append(div);

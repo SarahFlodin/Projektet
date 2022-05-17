@@ -64,6 +64,10 @@ div {
 
 }
 
+.cityBox > h3, .cityBox > p {
+  pointer-events: none; 
+}
+
 button {
   position: relative;
   padding: 0.5em 1em;

@@ -1,12 +1,10 @@
 // När man klickar på programmen ska elementet med id programmeoverlay anropas
 function clickProgramme(event){
-  
+  console.log(event);
   //Hittar targetID 
     let target = event.target.id;
-    if (target == PROGRAMMES.id) {
-    }
    
-    document.getElementById("programmeOverlay")
+    document.getElementById("programmeOverlay");
     
     const text = document.createElement("h2");
     text.innerText = `${PROGRAMMES[target].name}`;
@@ -24,22 +22,35 @@ function clickProgramme(event){
       programmeOverlay.append(div);
 
       let aboutProgramme = document.createElement("div");
+      let reviewProgramme = document.createElement("div");
+
+
       let sumStudent = PROGRAMMES[target].localStudents + PROGRAMMES[target].exchangeStudents;
       let average = PROGRAMMES[target].successRate / PROGRAMMES[target].successRate.length;
       let language = LANGUAGES.find(lang => lang.id == PROGRAMMES[target].language)
       let level = LEVELS[PROGRAMMES[target].level];
-
+/*
+      let reviewTeachers = 
+      let reviewStudents =
+      let reviewProgramme =
+*/
       aboutProgramme.innerHTML = `
       <h3> Om programmet </h3>
       <p> Nivå: ${level} </p> 
       <p> Språk: ${language.name}</p>
       <p> Studenter: ${sumStudent}</p>
       <p> Antagningsbetyg: ${average} </p>
-      `
+      `;
 
-      review
-   
+      reviewProgramme.innerHTML = `
+      <h3> Omdömmen </h3>
+      <p> Lärare: </p> 
+      <p> Kurser: </p>
+      <p> Studenter: </p>
+      `;
+
     programmeOverlay.append(aboutProgramme);
+    programmeOverlay.append(reviewProgramme);
    
     return programmeOverlay;
 }
@@ -54,6 +65,6 @@ function openProgrammeOverlay() {
     document.getElementById("programmeOverlay").style.width = "0%";
   }
 
-clickProgramme();
+
 
  

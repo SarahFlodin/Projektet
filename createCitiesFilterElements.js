@@ -15,7 +15,8 @@ function createCitiesFilterElements (cities) {
         for (let i = 0; i < cities.length; i++) {
             let div = document.createElement("div");
             div.classList.add("cityBox");
-              div.addEventListener("click", clickCity)
+            
+            div.addEventListener("click", clickCity)
       div.onclick = function openCityOverlay() {
          document.getElementById("cityOverlay").style.width = "100%";
        }

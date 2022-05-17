@@ -21,12 +21,12 @@ div {
   width: 50px;
 }
 
-#header{
+#header {
   padding: 30px;
   cursor: pointer;
 }
 
-#footer{
+#footer {
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -35,15 +35,15 @@ div {
   align-items: center;
 }
 
-#countryButtons{
+#countryButtons {
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .aboutUsImage {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 
 .cityBox {
@@ -51,7 +51,6 @@ div {
   margin: 3px;
   padding: 3px;
 }
-
 
 button {
   position: relative;
@@ -67,11 +66,6 @@ button:hover {
   background-color: #8ca684;
 }
 
-#hamburger{
+#hamburger {
   background-color: var(--green);
 }
-
-#hamburgerMenu{
-  width: 68vw;
-}
-

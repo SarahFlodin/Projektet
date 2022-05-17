@@ -21,7 +21,7 @@ div {
   width: 50px;
 }
 
-#fieldButtons{
+#fieldButtons {
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -32,12 +32,12 @@ div {
   width: 50px;
 }
 
-#header{
+#header {
   padding: 30px;
   cursor: pointer;
 }
 
-#footer{
+#footer {
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -54,8 +54,9 @@ div {
 
 /* gör att man inte kan klicka på p eller h3*/
 
-.programmesBox > h3, .programmesBox > p {
-  pointer-events: none; 
+.programmesBox > h3,
+.programmesBox > p {
+  pointer-events: none;
 }
 
 button {
@@ -74,11 +75,6 @@ button {
   box-shadow: inset 0 0 10px #2e3b2f;
 }
 
-
-#hamburger{
+#hamburger {
   background-color: var(--green);
-}
-
-#hamburgerMenu{
-  width: 68vw;
 }

@@ -2,7 +2,6 @@
 function clickProgramme(event){
   
   //Hittar targetID 
-    console.log(event.target.id);
     let target = event.target.id;
    
    document.getElementById("programmeOverlay")
@@ -16,7 +15,7 @@ function clickProgramme(event){
       div.onclick = function closeProgrammeOverlay() {
          document.getElementById("programmeOverlay").style.width = "0%";
          document.getElementById("programmeOverlay").innerHTML = " ";
-       }
+        }
        div.innerHTML = "&times;"
 
 

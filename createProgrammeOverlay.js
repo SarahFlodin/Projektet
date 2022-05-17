@@ -1,18 +1,21 @@
 // När man klickar på programmen ska elementet med id programmeoverlay anropas
 function clickProgramme(event){
+  
+  //Hittar targetID 
     console.log(event.target.id);
     let target = event.target.id;
    
    document.getElementById("programmeOverlay")
     
-    const text = document.createElement("h1");
-    text.innerText = "Overlay";
+    const text = document.createElement("h2");
+    text.innerText = `${PROGRAMMES[target].name}`;
+    
 
     let div = document.createElement("div");
-   div.addEventListener("click", clickProgramme)
+    div.addEventListener("click", clickProgramme);
       div.onclick = function closeProgrammeOverlay() {
          document.getElementById("programmeOverlay").style.width = "0%";
-         document.getElementById("programmeOverlay").innerHTML = " "
+         document.getElementById("programmeOverlay").innerHTML = " ";
        }
        div.innerHTML = "&times;"
 

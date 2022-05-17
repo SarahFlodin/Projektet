@@ -23,6 +23,7 @@ div {
 
 #header{
   padding: 30px;
+  cursor: pointer;
 }
 
 #footer{

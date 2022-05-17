@@ -47,9 +47,11 @@ let countryButtons = document.getElementById("countryButtons");
 
 // skapar länderknapparna
 function createCountryButtons (COUNTRYBUTTON) {
+    
     for (let i = 0; i < COUNTRYBUTTON.length; i++) {
         let button = document.createElement("button");
         button.innerText = ` ${COUNTRYBUTTON[i].name} `;
+
         button.addEventListener("click", function() {
             let foundCities = filterButtons (i);
             createCitiesFilterElements (foundCities);

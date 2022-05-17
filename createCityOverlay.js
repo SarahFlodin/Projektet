@@ -1,6 +1,6 @@
 "use strict"
 
-function clickCities(event){
+function clickCity(event){
     console.log(event.target.id);
     let target = event.target.id;
    
@@ -8,20 +8,31 @@ function clickCities(event){
     
     const text = document.createElement("h1");
     text.innerText = "Overlay";
-    programmeOverlay.append(text);
-    programmeOverlay.append(div);
 
-    return programmeOverlay;
+    let div = document.createElement("div");
+ div.addEventListener("click", clickCity)
+    div.onclick = function closeCityOverlay() {
+       document.getElementById("cityOverlay").style.width = "0%";
+       document.getElementById("cityOverlay").innerHTML = " "
+     }
+     div.innerHTML = "&times;"
+
+
+  cityOverlay.append(text);
+  cityOverlay.append(div);
+    
+
+    return cityOverlay;
 }
 
-// Här öppnas overlayen, tydligt namn på functionen
-function openCitiesOverlay() {
-    document.getElementById("programmeOverlay").style.width = "100%";
-  }
-  
-  // Tydlig
-  function closeCitiesOverlay() {
-    document.getElementById("programmeOverlay").style.width = "0%";
-  }
+function openCityOverlay() {
+  document.getElementById("cityOverlay").style.width = "100%";
+}
+
+// Tydlig
+function closeCityOverlay() {
+  document.getElementById("cityOverlay").style.width = "0%";
+}
 
 clickCities();
+

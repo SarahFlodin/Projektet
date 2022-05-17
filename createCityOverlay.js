@@ -3,6 +3,7 @@
 function clickCity(event){
 
     let target = event.target.id;
+    console.log(target.id)
 
     if (target == CITIES.id) {
     }
@@ -10,7 +11,7 @@ function clickCity(event){
    document.getElementById("cityOverlay")
     
     const text = document.createElement("h2");
-    text.innerText = "Overlay";
+    text.innerText = `${CITIES[target].name}`;
 
     let div = document.createElement("div");
     div.addEventListener("click", clickCity)

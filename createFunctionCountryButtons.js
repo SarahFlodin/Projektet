@@ -88,23 +88,5 @@ function filterCountryButtons(buttonObject, COUNTRYBUTTON) {
  let idArray = countryArray.map(element => element.id);
  return CITIES.filter (city => idArray.includes(city.countryID));
 
-
-
 }
 
-// Det är denna som skapar alla boxarna till städerna 
-function createCitiesFilterElements (cities) {
-    let citiesDiv = document.querySelector("#cities");
-    citiesDiv.innerHTML = "";
-        for (let i = 0; i < cities.length; i++) {
-            let div = document.createElement("div");
-            div.classList.add("cityBox");
-            let image = document.createElement("img");
-            div.textContent = `${cities[i].name}`;
-            image.src = `./Images/${cities[i].imagesNormal[0]}`;
-
-            div.append (image);
-            citiesDiv.append(div);
-        }
-        console.log(cities)
-}

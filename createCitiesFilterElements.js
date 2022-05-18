@@ -29,8 +29,6 @@ function createCitiesFilterElements (cities) {
 
             div.append (image);
             citiesDiv.append(div);
-        } 
-        
-      
+        }      
 }
 

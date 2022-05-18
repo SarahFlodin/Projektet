@@ -6,4 +6,3 @@ function buildHeaderImage(){
       headerImage.src = `./Images/utlandsstudierLight.png`;
     header.append(headerImage)
   }
- buildHeaderImage();

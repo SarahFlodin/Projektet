@@ -21,12 +21,12 @@ div {
   width: 50px;
 }
 
-#header{
+#header {
   padding: 30px;
   cursor: pointer;
 }
 
-#footer{
+#footer {
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -35,15 +35,15 @@ div {
   align-items: center;
 }
 
-#countryButtons{
+#countryButtons {
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .aboutUsImage {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 
 .cityBox {
@@ -53,19 +53,18 @@ div {
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
-  box-shadow:
-       inset 0 -3em 3em rgba(0,0,0,0.1),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .cityBox > img {
   height: 50%;
   width: 50%;
-
 }
 
-.cityBox > h3, .cityBox > p {
-  pointer-events: none; 
+.cityBox > h3,
+.cityBox > p {
+  pointer-events: none;
 }
 
 button {
@@ -82,12 +81,8 @@ button:hover {
   background-color: #8ca684;
 }
 
-#hamburger{
+#hamburger {
   background-color: var(--green);
-}
-
-#hamburgerMenu{
-  width: 68vw;
 }
 
 button {

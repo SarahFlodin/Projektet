@@ -1,14 +1,10 @@
 "use strict"
 
-function clickCity(event){
-console.log(event.target)
+function clickCity(city){
+console.log(city);
  
-  document.getElementById("cityOverlay")
-    
-  let foundCity = CITIES.countryID == COUNTRIES.id
-
     const text = document.createElement("h2");
-    text.innerText = `${CITIES[foundCity].name}`;
+    text.innerText = `${city.name}`;
 
     let div = document.createElement("div");
     div.addEventListener("click", clickCity)
@@ -22,7 +18,6 @@ console.log(event.target)
 
     cityOverlay.append(text);
     cityOverlay.append(div);
-    
 
     return cityOverlay;
 }

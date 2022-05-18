@@ -1,12 +1,14 @@
-function countryPage ()
-buildHeaderImage ()
+"use strict"
 
-add ()
+function countryPage ();
+buildHeaderImage ();
+
+add ();
 
 createCountryButtons (COUNTRYBUTTON);
 
 templateHtml
 
-add ()
+add ();
 
-buildFooter()
+buildFooter();

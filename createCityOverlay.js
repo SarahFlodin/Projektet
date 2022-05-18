@@ -27,9 +27,11 @@ console.log(city);
      let reviewCountry = document.createElement("div");
      reviewCountry.innerHTML = `
      <h3> Omdöme </h3>
+
      <p> Uteliv: ${reviewOut(city)} / 5 </p>
      <p> Restaurang: ${reviewFood(city)} / 5</p>
      <p> Boende: ${reviewAccomodation(city)} / 5</p>
+
      `;
 
     cityOverlay.append(text);

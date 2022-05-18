@@ -45,7 +45,7 @@ const FIELDSBUTTON = [
 // Knapparna till ämnen på ProgrammePage
 function createFieldButtons (FIELDSBUTTON) {
   let fieldButtons = document.getElementById("fieldButtons");
-  
+
     for (let i = 0; i < FIELDSBUTTON.length; i ++) {
         let button = document.createElement("button");
         button.innerText = `${FIELDSBUTTON[i].name}`;

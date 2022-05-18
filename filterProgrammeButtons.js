@@ -46,7 +46,7 @@ function createFilterProgrammeElements (programmes){
       <h3>${programmes[i].name}</h3> 
       <p> Nivå: ${level}</p>
       <br><br> 
-      <p>Universitet:${uni.name}</p>`;
+      <p>Universitet: ${uni.name}</p>`;
       
    programmesDiv.append(div);
    }

@@ -20,9 +20,6 @@ function createCitiesFilterElements (cities) {
                 clickCity (cities[i]);
             })
 
-
-
-
       div.onclick = function openCityOverlay() {
          document.getElementById("cityOverlay").style.width = "100%";
        }

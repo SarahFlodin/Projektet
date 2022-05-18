@@ -15,9 +15,28 @@ console.log(city);
      }
      div.innerHTML = "&times;"
 
+     let aboutCountry = document.createElement("div");
+     aboutCountry.innerHTML = `
+     <h3> Om Staden </h3>
+     <p> ${city.text} </p>
+     `;
+
+     let aboutCountryImage = document.createElement("img");
+     aboutCountryImage.src = `./Images/${city.imagesNormal[1]}`;
+
+     let reviewCountry = document.createElement("div");
+     reviewCountry.innerHTML = `
+     <h3> Omdömme </h3>
+     <p> Uteliv:  </p>
+     <p> Restaurang:  </p>
+     <p> Boende:</p>
+     `;
 
     cityOverlay.append(text);
     cityOverlay.append(div);
+    cityOverlay.append(aboutCountry);
+    cityOverlay.append(aboutCountryImage);
+    cityOverlay.append(reviewCountry);
 
     return cityOverlay;
 }

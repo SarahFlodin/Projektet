@@ -51,12 +51,12 @@ div {
   width: 50px;
 }
 
-#header{
+#header {
   padding: 30px;
   cursor: pointer;
 }
 
-#footer{
+#footer {
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -75,17 +75,11 @@ button {
   transition-duration: 0.4s;
 }
 
-
 button:active {
   transition: 1s;
   box-shadow: black;
-
 }
 
-#hamburger{
+#hamburger {
   background-color: var(--green);
-}
-
-#hamburgerMenu{
-  width: 68vw;
 }

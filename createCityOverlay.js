@@ -51,6 +51,9 @@ function reviewOut(city){
       amountOfComments.push(COMMENTS_CITY[x]) 
     }
   }
+  if  ( sum == 0){
+    return "Saknar tyvärr omdöme"
+ }
   return Math.round(sum / amountOfComments.length)
 }
 
@@ -64,20 +67,27 @@ function reviewFood(city){
       amountOfComments.push(COMMENTS_CITY[x]) 
     }
   }
+  if  ( sum == 0){
+    return "Saknar tyvärr omdöme"
+ }
   return Math.round(sum / amountOfComments.length)
 }
 
 function reviewAccomodation(city){
   let sum = 0;
-  let amountOfComments = []
+  let amountOfComments = [] 
+  
   for (let x = 0; x < COMMENTS_CITY.length; x++){
     if (COMMENTS_CITY[x].cityID == city.id){
       let stars = COMMENTS_CITY[x].stars;
       sum = sum + stars.accomodation;
-      amountOfComments.push(COMMENTS_CITY[x]) 
+      amountOfComments.push(COMMENTS_CITY[x]);
     }
   }
-  return Math.round(sum / amountOfComments.length)
+  if  ( sum == 0){
+    return "Saknar tyvärr omdöme"
+ }
+ return Math.round(sum / amountOfComments.length);
 }
 
 function openCityOverlay() {

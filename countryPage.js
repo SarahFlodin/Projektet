@@ -1,14 +1,12 @@
 "use strict"
 
-function countryPage ();
+function countryPage () {
 buildHeaderImage ();
-
-add ();
 
 createCountryButtons (COUNTRYBUTTON);
 
-templateHtml
-
-add ();
-
 buildFooter();
+
+}
+
+countryPage();

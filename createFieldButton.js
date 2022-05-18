@@ -40,10 +40,11 @@ const FIELDSBUTTON = [
 
 ];
 
-const fieldButtons = document.getElementById("fieldButtons");
+
 
 // Knapparna till ämnen på ProgrammePage
 function createFieldButtons (FIELDSBUTTON) {
+  let fieldButtons = document.getElementById("fieldButtons");
   
     for (let i = 0; i < FIELDSBUTTON.length; i ++) {
         let button = document.createElement("button");
@@ -57,5 +58,4 @@ function createFieldButtons (FIELDSBUTTON) {
         fieldButtons.appendChild(button);
       } 
 }
-createFieldButtons (FIELDSBUTTON);
 

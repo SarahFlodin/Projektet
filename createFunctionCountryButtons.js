@@ -72,8 +72,6 @@ function createCountryButtons (COUNTRYBUTTON) {
 }
 
 
-createCountryButtons (COUNTRYBUTTON);
-
 function filterCountryButtons(buttonObject, COUNTRYBUTTON) {
 
     if (buttonObject.selected) {
@@ -82,7 +80,6 @@ function filterCountryButtons(buttonObject, COUNTRYBUTTON) {
        buttonObject.selected = true;
     }
 
- console.log(COUNTRYBUTTON);
  
  let countryArray = COUNTRYBUTTON.filter(countrybutton => countrybutton.selected);
  let idArray = countryArray.map(element => element.id);

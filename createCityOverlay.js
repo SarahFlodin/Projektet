@@ -26,10 +26,10 @@ console.log(city);
 
      let reviewCountry = document.createElement("div");
      reviewCountry.innerHTML = `
-     <h3> Omdömme </h3>
-     <p> Uteliv:  </p>
-     <p> Restaurang:  </p>
-     <p> Boende:</p>
+     <h3> Omdöme </h3>
+     <p> Uteliv: ${reviewOut(city)} </p>
+     <p> Restaurang: ${reviewFood(city)} </p>
+     <p> Boende: ${reviewAccomodation(city)}</p>
      `;
 
     cityOverlay.append(text);
@@ -39,6 +39,45 @@ console.log(city);
     cityOverlay.append(reviewCountry);
 
     return cityOverlay;
+}
+
+function reviewOut(city){
+  let sum = 0;
+  let amountOfComments = []
+  for (let x = 0; x < COMMENTS_CITY.length; x++){
+    if (COMMENTS_CITY[x].cityID == city.id){
+      let stars = COMMENTS_CITY[x].stars;
+      sum = sum + stars.out;
+      amountOfComments.push(COMMENTS_CITY[x]) 
+    }
+  }
+  return Math.round(sum / amountOfComments.length)
+}
+
+function reviewFood(city){
+  let sum = 0;
+  let amountOfComments = []
+  for (let x = 0; x < COMMENTS_CITY.length; x++){
+    if (COMMENTS_CITY[x].cityID == city.id){
+      let stars = COMMENTS_CITY[x].stars;
+      sum = sum + stars.food;
+      amountOfComments.push(COMMENTS_CITY[x]) 
+    }
+  }
+  return Math.round(sum / amountOfComments.length)
+}
+
+function reviewAccomodation(city){
+  let sum = 0;
+  let amountOfComments = []
+  for (let x = 0; x < COMMENTS_CITY.length; x++){
+    if (COMMENTS_CITY[x].cityID == city.id){
+      let stars = COMMENTS_CITY[x].stars;
+      sum = sum + stars.accomodation;
+      amountOfComments.push(COMMENTS_CITY[x]) 
+    }
+  }
+  return Math.round(sum / amountOfComments.length)
 }
 
 function openCityOverlay() {

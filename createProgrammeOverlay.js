@@ -39,7 +39,7 @@ function clickProgramme(event){
       <p> Nivå: ${level} </p> 
       <p> Språk: ${language.name}</p>
       <p> Studenter: ${sumStudent}</p>
-      <p> Antagningsbetyg: ${average} </p>
+      <p> Antagningsbetyg i snitt: ${average} </p>
       `;
 
       reviewProgramme.innerHTML = `

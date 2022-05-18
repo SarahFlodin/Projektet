@@ -26,7 +26,7 @@ function clickProgramme(event){
 
 
       let sumStudent = PROGRAMMES[target].localStudents + PROGRAMMES[target].exchangeStudents;
-      let average = PROGRAMMES[target].successRate / PROGRAMMES[target].successRate.length;
+      let average = PROGRAMMES[target].successRate.reduce((a, b) => a + b, 0) / PROGRAMMES[target].successRate.length;
       let language = LANGUAGES.find(lang => lang.id == PROGRAMMES[target].language)
       let level = LEVELS[PROGRAMMES[target].level];
 /*
@@ -55,16 +55,3 @@ function clickProgramme(event){
     return programmeOverlay;
 }
 
-// Här öppnas overlayen, tydligt namn på functionen
-function openProgrammeOverlay() {
-    document.getElementById("programmeOverlay").style.width = "100%";
-  }
-  
-  // Tydlig
-  function closeProgrammeOverlay() {
-    document.getElementById("programmeOverlay").style.width = "0%";
-  }
-
-
-
- 

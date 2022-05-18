@@ -44,7 +44,7 @@ function clickProgramme(event){
 
       reviewProgramme.innerHTML = `
       <h3> Omdömmen </h3>
-      <p> Lärare: </p> 
+      <p> Lärare: ${reviewTeachers(programme)} </p> 
       <p> Kurser: </p>
       <p> Studenter: </p>
       `;
@@ -55,3 +55,15 @@ function clickProgramme(event){
     return programmeOverlay;
 }
 
+function reviewTeachers(programme){
+      let sum = 0;
+      let amountOfComments = []
+      for (let i = 0; i < COMMENTS_PROGRAMME.length; i++){
+        if (COMMENTS_PROGRAMME[i].programmeID == programme.id){
+          let stars = COMMENTS_PROGRAMME[i].stars;
+          sum = sum + stars.teachers;
+          amountOfComments.push(COMMENTS_PROGRAMME[i]) 
+        }
+      }
+      return Math.round(sum / amountOfComments.length)
+    }

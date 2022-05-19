@@ -7,11 +7,16 @@ console.log(city);
     text.innerText = `${city.name}`;
 
     let div = document.createElement("div");
-    div.addEventListener("click", clickCity)
+    let fieldDiv = document.createElement("div");
+
+    let programmesDiv = document.createElement("div");
+    programmesDiv.id = "programmes";
+
+    fieldDiv.id = "fieldButtonsOverlay";
 
     div.onclick = function closeCityOverlay() {
        document.getElementById("cityOverlay").style.width = "0%";
-       document.getElementById("cityOverlay").innerHTML = " ";
+       document.getElementById("cityOverlay").innerHTML = "";
      }
      div.innerHTML = "&times;"
 
@@ -34,13 +39,17 @@ console.log(city);
 
      `;
     
-    createFieldButtonsOverlay(FIELDSBUTTON);
+     cityOverlay.append(text);
+     cityOverlay.append(div);
+     cityOverlay.append(aboutCountry);
+     cityOverlay.append(aboutCountryImage);
+     cityOverlay.append(reviewCountry);
+     cityOverlay.append(fieldDiv);
+     cityOverlay.append(programmesDiv);
 
-    cityOverlay.append(text);
-    cityOverlay.append(div);
-    cityOverlay.append(aboutCountry);
-    cityOverlay.append(aboutCountryImage);
-    cityOverlay.append(reviewCountry);
+     createFieldButtonsOverlay(FIELDSBUTTON, city);
+
+   
 
     return cityOverlay;
 }

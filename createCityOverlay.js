@@ -33,6 +33,8 @@ console.log(city);
      <p> Boende: ${reviewAccomodation(city)} / 5</p>
 
      `;
+    
+    createFieldButtonsOverlay(FIELDSBUTTON);
 
     cityOverlay.append(text);
     cityOverlay.append(div);
@@ -92,11 +94,3 @@ function reviewAccomodation(city){
  return Math.round(sum / amountOfComments.length);
 }
 
-function openCityOverlay() {
-  document.getElementById("cityOverlay").style.width = "100%";
-}
-
-// Tydlig
-function closeCityOverlay() {
-  document.getElementById("cityOverlay").style.width = "0%";
-}

@@ -51,12 +51,11 @@ const COUNTRYBUTTON = [
     
 ];
 
-
-let countryButtons = document.getElementById("countryButtons");
-
 // skapar länderknapparna
 function createCountryButtons (COUNTRYBUTTON) {
     
+let countryButtons = document.getElementById("countryButtons");    
+
     for (let i = 0; i < COUNTRYBUTTON.length; i++) {
         let button = document.createElement("button");
         button.innerText = ` ${COUNTRYBUTTON[i].name} `;

@@ -18,7 +18,7 @@ function filterProgrammeButtons(buttonObject, FIELDSBUTTON) {
 
 }
 
-// Tydlig
+
 // Skapar boxarna för programmen.
 function createFilterProgrammeElements (programmes){
    
@@ -32,7 +32,10 @@ function createFilterProgrammeElements (programmes){
       } 
 
    let div = document.createElement("div");
-   div.addEventListener("click", clickProgramme)
+   
+   div.addEventListener("click", function getProgrammeId (){
+      clickProgramme (programmes[i]);
+  })
       div.onclick = function openProgrammeOverlay() {
          document.getElementById("programmeOverlay").style.width = "100%";
        }

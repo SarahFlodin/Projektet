@@ -16,7 +16,7 @@ function createCitiesFilterElements (cities) {
             let div = document.createElement("div");
             div.classList.add("cityBox");
 
-            div.addEventListener("click", function x (){
+            div.addEventListener("click", function getCityId (){
                 clickCity (cities[i]);
             })
 

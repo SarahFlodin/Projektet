@@ -16,13 +16,11 @@ function createCitiesFilterElements (cities) {
             let div = document.createElement("div");
             div.classList.add("cityBox");
 
-            div.addEventListener("click", function getCityId (){
+            div.addEventListener("click", function openCityOverlay (){
                 clickCity (cities[i]);
+                document.getElementById("cityOverlay").style.width = "100%";
             })
 
-      div.onclick = function openCityOverlay() {
-         document.getElementById("cityOverlay").style.width = "100%";
-       }
             let image = document.createElement("img");
             div.textContent = `${cities[i].name}`;
             image.src = `./Images/${cities[i].imagesNormal[0]}`;

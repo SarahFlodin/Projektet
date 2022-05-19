@@ -38,6 +38,7 @@ function createFilterProgrammeElements (programmes){
   })
       div.onclick = function openProgrammeOverlay() {
          document.getElementById("programmeOverlay").style.width = "100%";
+         
        }
 
    div.classList.add("programmesBox")

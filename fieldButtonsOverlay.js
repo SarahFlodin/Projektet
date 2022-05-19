@@ -42,7 +42,7 @@ const FIELDSBUTTON = [
   
   
   // Knapparna till ämnen på ProgrammePage Overlay
-  function createFieldButtonsOverlay (FIELDSBUTTON) {
+  function createFieldButtonsOverlay (FIELDSBUTTON, city) {
     let fieldButtons = document.getElementById("fieldButtonsOverlay");
   
       for (let i = 0; i < FIELDSBUTTON.length; i ++) {
@@ -50,7 +50,7 @@ const FIELDSBUTTON = [
           button.innerText = `${FIELDSBUTTON[i].name}`;
   
           button.addEventListener("click", function() {
-            let foundProgrammes = filterProgrammeButtons (FIELDSBUTTON[i], FIELDSBUTTON);
+            let foundProgrammes = filterProgrammeButtons (FIELDSBUTTON[i], FIELDSBUTTON, city);
             createFilterProgrammeElements (foundProgrammes);
             button.classList.toggle("button-active");
           })
@@ -59,11 +59,18 @@ const FIELDSBUTTON = [
   }
 
 
+  function findUnies (id){
+    let city = DB.CITIES.filter((city)=> city.id == id)[0]
+    return DB.UNIVERSITIES.filter((uni)=> uni.cityID == city.id).map((uni)=> uni.id);
+}
+
 function createFilterProgrammeElements (programmes){
    
-
-    let programmesDiv = document.querySelector("#programme");
+  let programmesDiv = document.getElementById("programmes");
     programmesDiv.innerHTML = "";
+
+    
+    
  
      for (let i = 0; i < programmes.length; i++) {
        function findUnibyId(universitet) {
@@ -91,7 +98,7 @@ function createFilterProgrammeElements (programmes){
     }
  }
 
- function filterProgrammeButtons(buttonObject, FIELDSBUTTON) {
+ function filterProgrammeButtons(buttonObject, FIELDSBUTTON, city) {
 
     if (buttonObject.selected) {
        buttonObject.selected = false;
@@ -103,8 +110,11 @@ function createFilterProgrammeElements (programmes){
  
  let fieldArray = FIELDSBUTTON.filter(fieldbutton => fieldbutton.selected);
  let idArray = fieldArray.map(element => element.id);
+ console.log(fieldArray);
+ 
 
- return PROGRAMMES.filter(programme => idArray.includes(programme.subjectID));
+ return PROGRAMMES.filter(programme => findUnies(city.id).includes(programme.universityID)&& idArray.includes(programme.subjectID));
+ 
 
 }
  

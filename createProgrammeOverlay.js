@@ -11,7 +11,7 @@ function clickProgramme(programme){
 
     div.onclick = function closeProgrammeOverlay() {
          document.getElementById("programmeOverlay").style.width = "0%";
-         document.getElementById("programmeOverlay").innerHTML = " ";
+         
         }
        div.innerHTML = "&times;"
 

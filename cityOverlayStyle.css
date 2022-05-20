@@ -16,3 +16,16 @@
     overflow-x: scroll; 
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
+
+  #programmeOverlay.programmeOverlay {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: var(--beige); /* Black fallback color */
+    background-color: var(--beige); /* Black w/opacity */
+    overflow-x: scroll; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }

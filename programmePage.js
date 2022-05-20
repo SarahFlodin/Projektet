@@ -1,10 +1,9 @@
-function programmePage() {
+function programmePage () {
+  buildHeaderImage()
 
-    buildHeaderImage();
+  createFieldButtons(FIELDSBUTTON)
 
-    createFieldButtons(FIELDSBUTTON);
-
-    buildFooter();
+  buildFooter()
 }
 
-programmePage();
+programmePage()

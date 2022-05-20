@@ -1,5 +1,5 @@
-function startPage() {
-    buildHeaderImage();
-    buildFooter();
+function startPage () {
+  buildHeaderImage()
+  buildFooter()
 }
-startPage();
+startPage()

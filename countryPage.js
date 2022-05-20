@@ -1,12 +1,11 @@
-"use strict"
+'use strict'
 
 function countryPage () {
-buildHeaderImage ();
+  buildHeaderImage()
 
-createCountryButtons (COUNTRYBUTTON);
+  createCountryButtons(COUNTRYBUTTON)
 
-buildFooter();
-
+  buildFooter()
 }
 
-countryPage();
+countryPage()

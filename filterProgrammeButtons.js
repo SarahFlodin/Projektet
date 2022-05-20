@@ -18,7 +18,7 @@ function filterProgrammeButtons (buttonObject, FIELDSBUTTON) {
 
 // Skapar boxarna för programmen.
 function createFilterProgrammeElements (programmes) {
-  let programmesDiv = document.querySelector('#program')
+  let programmesDiv = document.querySelector('#programme')
   programmesDiv.innerHTML = ''
 
   for (let i = 0; i < programmes.length; i++) {

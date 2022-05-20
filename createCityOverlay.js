@@ -20,29 +20,31 @@ function clickCity (city) {
   }
   div.innerHTML = '&times;'
 
-  let aboutCountry = document.createElement('div')
-  aboutCountry.innerHTML = `
+  let aboutCity = document.createElement('div')
+  aboutCity.innerHTML = `
      <h3> Om Staden </h3>
      <p> ${city.text} </p>
      `
 
-  let aboutCountryImage = document.createElement('img')
-  aboutCountryImage.src = `./Images/${city.imagesNormal[1]}`
+  addStorytelCityOverlay()
+  addAdlibrisCityOverlay()
 
-  let reviewCountry = document.createElement('div')
-  reviewCountry.innerHTML = `
+  let aboutCityImage = document.createElement('img')
+  aboutCityImage.src = `./Images/${city.imagesNormal[1]}`
+
+  let reviewCity = document.createElement('div')
+  reviewCity.innerHTML = `
      <h3> Omdöme </h3>
      <p> Uteliv: ${reviewOut(city)} / 5 </p>
-     <p> Restaurang: ${reviewFood(city)} / 5</p>
-     <p> Boende: ${reviewAccomodation(city)} / 5</p>
+     <p> Restaurang: ${reviewFood(city)} / 5 </p>
+     <p> Boende: ${reviewAccomodation(city)} / 5 </p>
 
      `
-
   cityOverlay.append(text)
   cityOverlay.append(div)
-  cityOverlay.append(aboutCountry)
-  cityOverlay.append(aboutCountryImage)
-  cityOverlay.append(reviewCountry)
+  cityOverlay.append(aboutCity)
+  cityOverlay.append(aboutCityImage)
+  cityOverlay.append(reviewCity)
   cityOverlay.append(fieldDiv)
   cityOverlay.append(programmesDiv)
 

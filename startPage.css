@@ -55,7 +55,9 @@ div {
   padding: 30px;
   cursor: pointer;
 }
-
+#addStorytel > img{
+  width: 100%;
+}
 #footer {
   flex-direction: row;
   flex-wrap: wrap;

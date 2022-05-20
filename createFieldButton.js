@@ -1,46 +1,5 @@
 "use script";
 
-// SubjectArray
-const FIELDSBUTTON = [
-  {
-    "id": 0,
-    "name": "Matematik",
-    "selected": false
-  },
-
-  { "id": 1,
-    "name": "Teknik",
-    "selected": false
-  },
-
- { "id": 2,
-   "name": "Juridik",
-   "selected": false
- },
-
-  { "id": 3,
-   "name": "Medicin",
-   "selected": false
-  },
-
- { "id": 4,
-   "name": "Sociologi",
-   "selected": false
- },
-
-  { "id": 5,
-   "name": "Filosofi",
-   "selected": false
-  },
-
-   { "id": 6,
-   "name": "Design",
-   "selected": false
-   },
-
-];
-
-
 
 // Knapparna till ämnen på ProgrammePage
 function createFieldButtons (FIELDSBUTTON) {

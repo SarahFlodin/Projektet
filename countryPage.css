@@ -100,3 +100,16 @@ button {
   inset: 1px;
   box-shadow: inset 0 0 10px #2e3b2f;
 }
+
+#addStorytel{
+  width: 100%;
+  position: absolute;
+  top: 800px;
+}
+
+
+#countryButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

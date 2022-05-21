@@ -32,18 +32,25 @@
 
   #cityOverlay > #addAdlibris {
     position: relative;
-    top: 100px;
+    top: 50px;
   }
 
   #cityOverlay > #addStorytel {
     position: relative;
-    top: 700px;
+    top: 650px;
   }
 
+  h3{
+    padding-top: 20px;
+  }
+  
   #reviewCity {
     padding-top: 30px;
   }
 
   #cityOverlay > img {
-    width: 80vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

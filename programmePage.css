@@ -80,4 +80,8 @@ button {
   box-shadow: inset 0 0 10px #2e3b2f;
 }
 
-
+#fieldButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

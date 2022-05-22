@@ -36,6 +36,9 @@ function createFilterProgrammeElements (programmes) {
     }
 
     let div = document.createElement('div')
+
+    div.addEventListener('click', clickProgrammes(programmes[i]))
+    
     div.onclick = function openProgrammeOverlay () {
       clickProgrammes(programmes[i])
       document.getElementById('programmeOverlay').style.width = '100%'
@@ -76,7 +79,7 @@ function filterProgrammesButtons (buttonObject, FIELDSBUTTON, city) {
 }
 
 function clickProgrammes (programme) {
-console.log(programme)
+
   const title = document.createElement('h2')
   title.innerText = `${programme.name}`
 

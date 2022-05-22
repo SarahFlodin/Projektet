@@ -9,7 +9,7 @@ function createFieldButtonsOverlay (FIELDSBUTTON, city) {
     button.innerText = `${FIELDSBUTTON[i].name}`
 
     button.addEventListener('click', function () {
-      let foundProgrammes = filterProgrammeButtons(
+      let foundProgrammes = filterProgrammesButtons(
         FIELDSBUTTON[i],
         FIELDSBUTTON,
         city
@@ -36,7 +36,7 @@ function createFilterProgrammeElements (programmes) {
     }
 
     let div = document.createElement('div')
-    div.addEventListener('click', clickProgramme)
+    div.addEventListener('click', clickProgrammes(programmes[i]))
     div.onclick = function openProgrammeOverlay () {
       document.getElementById('programmeOverlay').style.width = '100%'
     }
@@ -45,18 +45,17 @@ function createFilterProgrammeElements (programmes) {
     div.id = programmes[i].id
     const level = LEVELS[programmes[i].level]
     const uni = UNIVERSITIES.find(findUnibyId)
-
     div.innerHTML = `
-       <h3>${programmes[i].name}</h3> 
+       <h3>${programmes[i].name}</h3>
        <p> Nivå: ${level}</p>
-       <br><br> 
+       <br><br>
        <p>Universitet: ${uni.name}</p>`
 
     programmesDiv.append(div)
   }
 }
 
-function filterProgrammeButtons (buttonObject, FIELDSBUTTON, city) {
+function filterProgrammesButtons (buttonObject, FIELDSBUTTON, city) {
   if (buttonObject.selected) {
     buttonObject.selected = false
   } else {
@@ -76,23 +75,21 @@ function filterProgrammeButtons (buttonObject, FIELDSBUTTON, city) {
   )
 }
 
-function clickProgramme (programme) {
-  document.getElementById('programmeOverlay')
+function clickProgrammes (programme) {
 
-  const text = document.createElement('h2')
-  text.innerText = `${programme.name}`
+  const title = document.createElement('h2')
+  title.innerText = `${programme.name}`
 
-  let div = document.createElement('div')
-  div.addEventListener('click', clickProgramme)
+  let x = document.createElement('div')
 
-  div.onclick = function closeProgrammeOverlay () {
+  x.onclick = function closeProgrammesOverlay () {
     document.getElementById('programmeOverlay').style.width = '0%'
     document.getElementById('programmeOverlay').innerHTML = ' '
   }
-  div.innerHTML = '&times;'
+  x.innerHTML = '&times;'
 
-  programmeOverlay.append(text)
-  programmeOverlay.append(div)
+  programmeOverlay.append(title)
+  programmeOverlay.append(x)
 
   let aboutProgramme = document.createElement('div')
   let reviewProgramme = document.createElement('div')
@@ -106,15 +103,15 @@ function clickProgramme (programme) {
 
   aboutProgramme.innerHTML = `
     <h3> Om programmet </h3>
-    <p> Nivå: ${level} </p> 
+    <p> Nivå: ${level} </p>
     <p> Språk: ${language.name}</p>
     <p> Studenter: ${sumStudent}</p>
     <p> Antagningsbetyg i snitt: ${average} </p>
     `
 
   reviewProgramme.innerHTML = `
-      <h3> Omdömmen </h3>
-      <p> Lärare: ${reviewTeachers(programme)} </p> 
+      <h3> Omdömen </h3>
+      <p> Lärare: ${reviewTeachers(programme)} </p>
       <p> Kurser: ${reviewCourses(programme)}</p>
       <p> Studenter: ${reviewStudents(programme)}</p>
       `
@@ -125,41 +122,3 @@ function clickProgramme (programme) {
   return programmeOverlay
 }
 
-function reviewTeachers (programme) {
-  let sum = 0
-  let amountOfComments = []
-  for (let i = 0; i < COMMENTS_PROGRAMME.length; i++) {
-    if (COMMENTS_PROGRAMME[i].programmeID == programme.id) {
-      let stars = COMMENTS_PROGRAMME[i].stars
-      sum = sum + stars.teachers
-      amountOfComments.push(COMMENTS_PROGRAMME[i])
-    }
-  }
-  return Math.round(sum / amountOfComments.length)
-}
-
-function reviewStudents (programme) {
-  let sum = 0
-  let amountOfComments = []
-  for (let i = 0; i < COMMENTS_PROGRAMME.length; i++) {
-    if (COMMENTS_PROGRAMME[i].programmeID == programme.id) {
-      let stars = COMMENTS_PROGRAMME[i].stars
-      sum = sum + stars.students
-      amountOfComments.push(COMMENTS_PROGRAMME[i])
-    }
-  }
-  return Math.round(sum / amountOfComments.length)
-}
-
-function reviewCourses (programme) {
-  let sum = 0
-  let amountOfComments = []
-  for (let i = 0; i < COMMENTS_PROGRAMME.length; i++) {
-    if (COMMENTS_PROGRAMME[i].programmeID == programme.id) {
-      let stars = COMMENTS_PROGRAMME[i].stars
-      sum = sum + stars.courses
-      amountOfComments.push(COMMENTS_PROGRAMME[i])
-    }
-  }
-  return Math.round(sum / amountOfComments.length)
-}

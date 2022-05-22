@@ -13,7 +13,7 @@
     top: 0;
     background-color: var(--beige); /* Black fallback color */
     background-color: var(--beige); /* Black w/opacity */
-    overflow-x: scroll; /* Disable horizontal scroll */
+     /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
 

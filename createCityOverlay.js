@@ -101,3 +101,4 @@ function reviewAccomodation (city) {
   }
   return Math.round(sum / amountOfComments.length)
 }
+

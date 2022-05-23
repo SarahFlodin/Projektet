@@ -28,8 +28,6 @@ function clickProgramme (programme) {
   let language = LANGUAGES.find(lang => lang.id == programme.language)
   let level = LEVELS[programme.level]
 
-  addStorytelProgrammeOverlay()
-  addAdlibrisProgrammeOverlay()
 
   aboutProgramme.innerHTML = `
       <h3> Om programmet </h3>
@@ -45,7 +43,6 @@ function clickProgramme (programme) {
       <p> Kurser: ${reviewCourses(programme)}</p>
       <p> Studenter: ${reviewStudents(programme)}</p>
       `
-  addStorytel()
   
   programmeOverlay.append(aboutProgramme)
   programmeOverlay.append(reviewProgramme)

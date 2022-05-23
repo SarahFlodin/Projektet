@@ -89,6 +89,7 @@ function clickProgrammes (programme) {
     document.getElementById('programmeOverlay').innerHTML = ' '
   }
   x.innerHTML = '&times;'
+  x.id = "closeButton";
 
   programmeOverlay.append(title)
   programmeOverlay.append(x)

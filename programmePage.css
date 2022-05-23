@@ -13,8 +13,6 @@ body {
   width: 390px;
   background-color: var(--beige);
   font-family: var(--fontStile);
-  border: black solid 2px;
-  border-radius: 2px;
 }
 
 h3 {

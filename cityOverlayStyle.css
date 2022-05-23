@@ -43,10 +43,6 @@
   top: 650px;
 }
 
-h3 {
-  padding-top: 20px;
-}
-
 #reviewCity {
   padding-top: 30px;
 }
@@ -62,4 +58,5 @@ h3 {
     top: 20px;
     right: 45px;
     font-size: 60px;
+    color: var(--darkgreen);
   }

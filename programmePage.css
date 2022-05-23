@@ -3,7 +3,7 @@
   --green: #c7e2bf;
   --darkgreen: #62a47c;
   --fontStile: 'proxima-nova', sans-serif;
-  --fontSizeText: 17px;
+  --fontSizeText: 16px;
   --fontSizeTitle: 20px;
 }
 
@@ -11,14 +11,27 @@ body {
   margin: 0px;
   width: 390px;
   background-color: var(--beige);
+  font-family: var(--fontStile);
 }
 
+h3 {
+  font-size: var(--fontSizeTitle);
+}
+
+p {
+  font-size: var(--fontSizeText);
+}
+
+button{
+  font-size: var(--fontSizeText);
+}
 
 #fieldButtons {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .programmesBox {

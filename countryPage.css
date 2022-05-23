@@ -24,6 +24,7 @@ p {
 button{
   font-size: var(--fontSizeText);
 }
+
 #countryButtons {
   flex-direction: row;
   flex-wrap: wrap;
@@ -33,7 +34,9 @@ button{
 #cities{
   display: flex;
 }
+
 .cityBox {
+  display: flex;
   background-color: #c7e2bf8a;
   border: black solid 2px;
   margin: 5px;

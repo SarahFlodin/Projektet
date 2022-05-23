@@ -13,8 +13,6 @@ div {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
-    font-size: var(--fontSizeText);
-    font-family: var(--fontStile);
 }
 
 #footer > div {

@@ -18,8 +18,10 @@ function clickProgramme (programme) {
   programmeOverlay.append(text)
   programmeOverlay.append(div)
 
-  let aboutProgramme = document.createElement('div')
-  let reviewProgramme = document.createElement('div')
+  let aboutProgramme = document.createElement('div');
+  aboutProgramme.classList.add("aboutProgramme");
+  let reviewProgramme = document.createElement('div');
+  reviewProgramme.classList.add("reviewProgramme");
 
   let sumStudent = programme.localStudents + programme.exchangeStudents
   let average =
@@ -37,7 +39,7 @@ function clickProgramme (programme) {
       `
 
   reviewProgramme.innerHTML = `
-      <h3> Omdömmen </h3>
+      <h3> Omdömen </h3>
       <p> Lärare: ${reviewTeachers(programme)} </p> 
       <p> Kurser: ${reviewCourses(programme)}</p>
       <p> Studenter: ${reviewStudents(programme)}</p>

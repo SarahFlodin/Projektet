@@ -23,6 +23,11 @@ function clickProgramme (programme) {
   let reviewProgramme = document.createElement('div');
   reviewProgramme.classList.add("reviewProgramme");
 
+  let addDivStorytel = document.createElement('div')
+  addDivStorytel.classList.add("addStorytel")
+  let addDivAdlibris = document.createElement('div')
+  addDivAdlibris.classList.add("addAdlibris")
+
   let sumStudent = programme.localStudents + programme.exchangeStudents
   let average =
     programme.successRate.reduce((a, b) => a + b, 0) /
@@ -46,8 +51,12 @@ function clickProgramme (programme) {
       `
 
   programmeOverlay.append(aboutProgramme)
+  programmeOverlay.append(addDivAdlibris)
   programmeOverlay.append(reviewProgramme)
+  programmeOverlay.append(addDivStorytel)
 
+  addStorytel()
+  addAdlibris()
 
   return programmeOverlay
 }

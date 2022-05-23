@@ -35,9 +35,9 @@ function clickCity (city) {
   let reviewCity = document.createElement('div')
   reviewCity.innerHTML = `
      <h3> Omdöme </h3>
-     <p> Uteliv: ${reviewOut(city)} / 5 </p>
-     <p> Restaurang: ${reviewFood(city)} / 5 </p>
-     <p> Boende: ${reviewAccomodation(city)} / 5 </p>
+     <p> Uteliv: ${reviewOut(city)} / 5 ⭐  </p>
+     <p> Restaurang: ${reviewFood(city)} / 5 ⭐ </p>
+     <p> Boende: ${reviewAccomodation(city)} / 5 ⭐  </p>
 
      `
   cityOverlay.append(text)

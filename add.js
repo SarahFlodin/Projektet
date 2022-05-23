@@ -4,6 +4,7 @@ function addAdlibris () {
   adlibris.innerHTML = ""
   let addImage = document.createElement('img')
   addImage.src = `./Images/adlibris.jpg`
+  
   for (let i = 0; i < adlibris.length; i++) {
     adlibris[i].append(addImage)
   }

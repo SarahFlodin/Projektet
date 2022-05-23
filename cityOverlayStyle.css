@@ -54,3 +54,7 @@
     align-items: center;
     justify-content: center;
   }
+  
+  h2 {
+    background-color: var(--green);
+  }

@@ -9,6 +9,12 @@ function clickCity (city) {
   let div = document.createElement('div')
   let fieldDiv = document.createElement('div')
 
+  let addDivStorytel = document.createElement('div')
+  addDivStorytel.classList.add("addStorytel")
+
+  let addDivAdlibris = document.createElement('div')
+  addDivAdlibris.classList.add("addAdlibris")
+
   let programmesDiv = document.createElement('div')
   programmesDiv.id = 'programmes'
 
@@ -42,11 +48,15 @@ function clickCity (city) {
   cityOverlay.append(div)
   cityOverlay.append(aboutCity)
   cityOverlay.append(aboutCityImage)
+  cityOverlay.append(addDivStorytel)
   cityOverlay.append(reviewCity)
   cityOverlay.append(fieldDiv)
+  cityOverlay.append(addDivAdlibris)
   cityOverlay.append(programmesDiv)
 
   createFieldButtonsOverlay(FIELDSBUTTON, city)
+  addStorytel()
+  addAdlibris()
 
   return cityOverlay
 }

@@ -2,6 +2,9 @@
   --beige: #fbefd1;
   --green: #c7e2bf;
   --darkgreen: #62a47c;
+  --fontStile: 'proxima-nova', sans-serif;
+  --fontSizeText: 17px;
+  --fontSizeTitle: 20px;
 }
 
 body {
@@ -16,9 +19,9 @@ body {
 }
 
 .cityBox {
+  display: flex;
   background-color: #c7e2bf8a;
   border: black solid 2px;
-  flex-direction: row;
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
@@ -27,8 +30,7 @@ body {
 }
 
 .cityBox > img {
-  height: 50%;
-  width: 50%;
+
 }
 
 .cityBox > h3,

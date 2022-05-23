@@ -19,6 +19,7 @@ function clickCity (city) {
     document.getElementById('cityOverlay').innerHTML = ''
   }
   div.innerHTML = '&times;'
+  div.id = "closeButton";
 
   let aboutCity = document.createElement('div')
   aboutCity.innerHTML = `

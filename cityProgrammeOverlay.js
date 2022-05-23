@@ -37,7 +37,6 @@ function createFilterProgrammeElements (programmes) {
 
     let div = document.createElement('div')
 
-    div.addEventListener('click', clickProgrammes(programmes[i]))
     
     div.onclick = function openProgrammeOverlay () {
       clickProgrammes(programmes[i])

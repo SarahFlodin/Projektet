@@ -13,6 +13,7 @@ function clickProgramme (programme) {
     document.getElementById('programmeOverlay').innerHTML = '';
   }
   div.innerHTML = '&times;'
+  div.id = "closeButton";
 
   programmeOverlay.append(text)
   programmeOverlay.append(div)

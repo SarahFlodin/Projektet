@@ -2,7 +2,8 @@
   --beige: #fbefd1;
   --green: #c7e2bf;
   --darkgreen: #62a47c;
-  --fontStile: "proxima-nova", sans-serif;
+  --greenOpacity: #c7e2bfb3;
+  --fontStile: 'proxima-nova', sans-serif;
   --fontSizeText: 16px;
   --fontSizeTitle: 20px;
 }
@@ -25,6 +26,11 @@ p {
   font-size: var(--fontSizeText);
 }
 
+h4{
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
 #studentOne,
 #studentTwo,
 #studentThree {
@@ -33,7 +39,8 @@ p {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  border: black solid 2px;
+  background-color: var(--greenOpacity);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #studentOne img {

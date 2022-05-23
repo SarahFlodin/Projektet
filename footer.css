@@ -17,4 +17,5 @@ div {
 
 #footer > div {
     align-items: center;
+    margin: 15px;
 }

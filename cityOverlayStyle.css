@@ -73,6 +73,5 @@ p {
   width: 50vw;
   height: 50vh;
   padding: 20px;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
 }

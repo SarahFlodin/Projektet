@@ -37,7 +37,7 @@ button {
 .cityBox {
   display: flex;
   background-color: #c7e2bf8a;
-  border: var(--darkgreen) dotted 0.2px;
+  border: var(--darkgreen) solid 0.2px;
   margin: 15px;
   padding: 10px;
   justify-content: center;

@@ -46,7 +46,8 @@
   }
 
   .programmesBox {
-    border: black solid 0.5px;
+    display: flex;
+    border: var(--darkgreen) solid 0.2px;
     margin: 10px 20px 10px 20px;
     border-radius: 5px;
     padding: 10px;
@@ -59,6 +60,7 @@
 h3 {
   padding: 0px 20px;
   margin: 0px;
+  margin-top: 10px;
 }
 
 h2{
@@ -109,3 +111,4 @@ p {
   padding: 5px;
 
 }
+

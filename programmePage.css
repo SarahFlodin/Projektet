@@ -10,46 +10,17 @@ body {
   background-color: var(--beige);
 }
 
-div {
-  display: flex;
-  flex-direction: column;
-}
-
-.aboutUsImage {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
 
 #fieldButtons {
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.aboutUsImage {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
-#header {
-  padding: 30px;
-  cursor: pointer;
-}
-
-#footer {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-#footer > div {
-  margin: 15px;
+  justify-content: center;
   align-items: center;
 }
 
 .programmesBox {
   border: black solid 0.5px;
-  margin: 10px;
+  margin: 10px 20px 10px 20px;
   border-radius: 5px;
   padding: 10px;
   background-color: #c7e2bf65;
@@ -80,8 +51,6 @@ button {
   box-shadow: inset 0 0 10px #2e3b2f;
 }
 
-#fieldButtons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#title{
+  padding: 0px 10px 0px 10px;
 }

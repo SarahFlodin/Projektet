@@ -10,10 +10,10 @@ function clickProgramme (programme) {
 
   div.onclick = function closeProgrammeOverlay () {
     document.getElementById('programmeOverlay').style.width = '0%'
-    document.getElementById('programmeOverlay').innerHTML = '';
+    document.getElementById('programmeOverlay').innerHTML = ''
   }
   div.innerHTML = '&times;'
-  div.id = "closeButton";
+  div.id = 'closeButton'
 
   programmeOverlay.append(text)
   programmeOverlay.append(div)
@@ -27,7 +27,6 @@ function clickProgramme (programme) {
     programme.successRate.length
   let language = LANGUAGES.find(lang => lang.id == programme.language)
   let level = LEVELS[programme.level]
-
 
   aboutProgramme.innerHTML = `
       <h3> Om programmet </h3>
@@ -43,9 +42,10 @@ function clickProgramme (programme) {
       <p> Kurser: ${reviewCourses(programme)}</p>
       <p> Studenter: ${reviewStudents(programme)}</p>
       `
-  
+
   programmeOverlay.append(aboutProgramme)
   programmeOverlay.append(reviewProgramme)
+
 
   return programmeOverlay
 }

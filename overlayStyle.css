@@ -1,16 +1,15 @@
-
 #hamburger > #hamburgerMenu {
   display: flex;
   justify-content: flex-end;
   background-color: var(--green);
 }
 
-#hamburgerMenu{
+#hamburgerMenu {
   padding-right: 10px;
 }
 
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
   position: fixed; /* Stay in place */
@@ -43,7 +42,8 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #f1f1f1;
 }
 
@@ -56,11 +56,12 @@
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
 }
-

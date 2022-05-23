@@ -1,25 +1,28 @@
 div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-  
 .aboutUsImage {
-    border-radius: 50%;
-    height: 90px;
-    width: 90px;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
 }
 
 #footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
 }
 
 #footer > div {
-    align-items: center;
-    margin: 20px;
+  align-items: center;
+  margin: 20px;
+}
+
+#footer > h3 {
+  padding-bottom: 7px;
 }
 
 #footer > h3 {

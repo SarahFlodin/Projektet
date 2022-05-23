@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="programmePage.css" />
-    <link rel="stylesheet" href="overlayStyle.css" />
-    <link rel="stylesheet" href="programmeOverlay.css" />
-    <link rel="stylesheet" href="headerHamburger.css">
-    <link rel="stylesheet" href="footer.css">
-    <title>Program</title>
-  </head>
-  <body>
-    <div id="container">
-      <div id="header" onclick="location.href='start.html'"></div>
-      <div id="hamburger">
-        <span
-          id="hamburgerMenu"
-          ><div style="font-size:30px;cursor:pointer" onclick="openHamburger()">&#9776;</div></span
-        >
-        <div id="myNav" class="overlay">
-          <a
-            href="javascript:void(0)"
-            class="closebtn"
-            onclick="closeHamburger()"
-            >&times;</a
-          >
-        </div>
-      </div>
-      <div class="addStorytel"></div>
-      <h3 id="title">Ämnen</h3>
-      <div id="fieldButtons"></div>
 
-      <div id="programmes">
-        <h3 id="title">Program</h3>
-      </div>
-      <div class="addAdlibris"></div>
-      <div id="programmeOverlay" class="programmeOverlay"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="programmePage.css" />
+  <link rel="stylesheet" href="overlayStyle.css" />
+  <link rel="stylesheet" href="programmeOverlay.css" />
+  <link rel="stylesheet" href="headerHamburger.css">
+  <link rel="stylesheet" href="footer.css">
+  <title>Program</title>
+</head>
 
-      <div id="programme"></div>
-     
-      <div id="footer">
-        <h3>Om oss</h3>
+<body>
+  <div id="container">
+    <div id="header" onclick="location.href='start.html'"></div>
+    <div id="hamburger">
+      <span id="hamburgerMenu">
+        <div style="font-size:30px;cursor:pointer" onclick="openHamburger()">&#9776;</div>
+      </span>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeHamburger()">&times;</a>
       </div>
     </div>
+    <div class="addStorytel"></div>
+    <h3 id="title">Ämnen</h3>
+    <div id="fieldButtons"></div>
 
-    <script src="database.js"></script>
-    <script src="commentsProgramme.js"></script>
-    <script src="buildHeader.js"></script>
-    <script src="filterProgrammeButtons.js"></script>
-    <script src="aboutUsDatabase.js"></script>
-    <script src="createProgrammeOverlay.js"></script>
-    <script src="hamburgerMenu.js"></script>
-    <script src="buildFooter.js"></script>
-    <script src="add.js"></script>
-    <script src="createFieldButton.js"></script>
-    <script src="programmePage.js"></script>
-  </body>
+    <div id="programmes">
+      <h3 id="title">Program</h3>
+    </div>
+    <div class="addAdlibris"></div>
+    <div id="programmeOverlay" class="programmeOverlay"></div>
+
+    <div id="programme"></div>
+
+    <div id="footer">
+      <h3>Om oss</h3>
+    </div>
+  </div>
+
+  <script src="database.js"></script>
+  <script src="commentsProgramme.js"></script>
+  <script src="buildHeader.js"></script>
+  <script src="filterProgrammeButtons.js"></script>
+  <script src="aboutUsDatabase.js"></script>
+  <script src="createProgrammeOverlay.js"></script>
+  <script src="hamburgerMenu.js"></script>
+  <script src="buildFooter.js"></script>
+  <script src="add.js"></script>
+  <script src="createFieldButton.js"></script>
+  <script src="programmePage.js"></script>
+</body>
+
 </html>

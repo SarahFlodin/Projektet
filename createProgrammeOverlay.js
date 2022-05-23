@@ -18,15 +18,15 @@ function clickProgramme (programme) {
   programmeOverlay.append(text)
   programmeOverlay.append(div)
 
-  let aboutProgramme = document.createElement('div');
-  aboutProgramme.classList.add("aboutProgramme");
-  let reviewProgramme = document.createElement('div');
-  reviewProgramme.classList.add("reviewProgramme");
+  let aboutProgramme = document.createElement('div')
+  aboutProgramme.classList.add('aboutProgramme')
+  let reviewProgramme = document.createElement('div')
+  reviewProgramme.classList.add('reviewProgramme')
 
   let addDivStorytel = document.createElement('div')
-  addDivStorytel.classList.add("addStorytel")
+  addDivStorytel.classList.add('addStorytel')
   let addDivAdlibris = document.createElement('div')
-  addDivAdlibris.classList.add("addAdlibris")
+  addDivAdlibris.classList.add('addAdlibris')
 
   let sumStudent = programme.localStudents + programme.exchangeStudents
   let average =

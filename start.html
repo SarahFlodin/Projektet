@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="startPage.css" />
-    <link rel="stylesheet" href="overlayStyle.css">
-    <link rel="stylesheet" href="headerHamburger.css">
-    <link rel="stylesheet" href="footer.css">
-    <title>Utlandsstudier.se</title>
-  </head>
-  <body>
-    <div id="container">
 
-      <div id="header"></div>
-      <div id="hamburger">
-       <span id="hamburgerMenu"> <div style="font-size:30px;cursor:pointer" onclick="openHamburger()">&#9776;</div></span>
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeHamburger()">&times;</a>
-        </div>    
-      </div>
-      <div class="addStorytel"></div>
-      <div id="navigationButtons">
-        <h4>Intresserad av att studera utomlands?</h4>
-         <p> Vi ger dig information om att studera utomlands för att du ska hitta rätt land och utbildning som passar dig. Här får du reda på allt om studerna samt aktiviteter och information om ditt studieland.</p>
-          <button id="subjectButton" onclick="location.href='countryPage.html'">Sök på land</button>
-          <button id="programmeButton" onclick="location.href='programmePage.html'">Sök på program</button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="startPage.css" />
+  <link rel="stylesheet" href="overlayStyle.css">
+  <link rel="stylesheet" href="headerHamburger.css">
+  <link rel="stylesheet" href="footer.css">
+  <title>Utlandsstudier.se</title>
+</head>
 
-      <div id="earlierStudents">
-        <h3>Tidigare Studenter</h1>
-          <div id="studentOne"> Robin har utforskat många länder tack vare utlandsstudier. Han har varit överallt från England till Australien och han rekomenderar verkligen att ta chansen! <br><br>
-            -Mina tips är: hitta närmaste klubb och vänner kommer på köpet! <img src="Images/studentOne.jpg" alt="student riding zipline"> </div>
-            
-          <div id="studentTwo">Jag älskar att vara nära sina nära och kära men ville samtidigt uppleva ny kultur och testa på hur det är att studera utomlands. Jag valde att åka till England med min bästa vän över en termin. <br><br>
-            -Mina tips är: åk med någon som står dig nära så det finns en trygghet.<img src="Images/studentTwo.jpg" alt="Graduation Student"></div>
-          <div id="studentThree"> Jag ville helst inte åka utomlands i början men då kursen jag ville gå enbart erbjöds i Australien insåg jag att det skulle vara värt det. <br><br>
-            -Mina tips är: vara öppen för möjligheter. Även om det är läskigt först så öppnar det nya dörrar för framtiden. <img src="Images/studentThree.jpg" alt="Playing beachball"></div>
-      </div>
-      <div class="addAdlibris"></div>
-      <div id="footer">
-        <h3>Om oss</h1>
-      </div>
+<body>
+  <div id="container">
 
+    <div id="header"></div>
+    <div id="hamburger">
+      <span id="hamburgerMenu">
+        <div style="font-size:30px;cursor:pointer" onclick="openHamburger()">&#9776;</div>
+      </span>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeHamburger()">&times;</a>
+      </div>
+    </div>
+    <div class="addStorytel"></div>
+    <div id="navigationButtons">
+      <h4>Intresserad av att studera utomlands?</h4>
+      <p> Vi ger dig information om att studera utomlands för att du ska hitta rätt land och utbildning som passar dig.
+        Här får du reda på allt om studerna samt aktiviteter och information om ditt studieland.</p>
+      <button id="subjectButton" onclick="location.href='countryPage.html'">Sök på land</button>
+      <button id="programmeButton" onclick="location.href='programmePage.html'">Sök på program</button>
     </div>
 
+    <div id="earlierStudents">
+      <h3>Tidigare Studenter</h1>
+        <div id="studentOne"> Robin har utforskat många länder tack vare utlandsstudier. Han har varit överallt från
+          England till Australien och han rekomenderar verkligen att ta chansen! <br><br>
+          -Mina tips är: hitta närmaste klubb och vänner kommer på köpet! <img src="Images/studentOne.jpg"
+            alt="student riding zipline"> </div>
 
-    <script src="database.js"></script>
-    <script src="aboutUsDatabase.js"></script>
-    <script src="buildFooter.js"></script>
-    <script src="buildHeader.js"></script>
-    <script src="add.js"></script>
-    <script src="hamburgerMenu.js"></script>
-    <script src="startPage.js"></script>
-  
-  </body>
+        <div id="studentTwo">Jag älskar att vara nära sina nära och kära men ville samtidigt uppleva ny kultur och testa
+          på hur det är att studera utomlands. Jag valde att åka till England med min bästa vän över en termin. <br><br>
+          -Mina tips är: åk med någon som står dig nära så det finns en trygghet.<img src="Images/studentTwo.jpg"
+            alt="Graduation Student"></div>
+        <div id="studentThree"> Jag ville helst inte åka utomlands i början men då kursen jag ville gå enbart erbjöds i
+          Australien insåg jag att det skulle vara värt det. <br><br>
+          -Mina tips är: vara öppen för möjligheter. Även om det är läskigt först så öppnar det nya dörrar för
+          framtiden. <img src="Images/studentThree.jpg" alt="Playing beachball"></div>
+    </div>
+    <div class="addAdlibris"></div>
+    <div id="footer">
+      <h3>Om oss</h1>
+    </div>
+
+  </div>
+
+
+  <script src="database.js"></script>
+  <script src="aboutUsDatabase.js"></script>
+  <script src="buildFooter.js"></script>
+  <script src="buildHeader.js"></script>
+  <script src="add.js"></script>
+  <script src="hamburgerMenu.js"></script>
+  <script src="startPage.js"></script>
+
+</body>
+
 </html>

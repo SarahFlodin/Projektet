@@ -33,26 +33,10 @@
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
-#cityOverlay > #addAdlibris {
-  position: relative;
-  top: 50px;
-}
-
-#cityOverlay > #addStorytel {
-  position: relative;
-  top: 650px;
-}
-
 #reviewCity {
   padding-top: 30px;
 }
 
-#cityOverlay > img {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
   #closeButton {
     position: absolute;
     top: 20px;
@@ -70,3 +54,25 @@
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
       0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   }
+
+
+h3 {
+  padding: 0px 20px;
+  margin: 0px;
+}
+
+h2{
+  padding: 70px 0px 0px 20px;
+}
+
+p {
+  padding: 0px 20px 0px 20px;
+}
+
+#cityOverlay.cityOverlay > img {
+  width: 50vw;
+  height: 50vh;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}

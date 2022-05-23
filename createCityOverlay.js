@@ -27,9 +27,6 @@ function clickCity (city) {
      <p> ${city.text} </p>
      `
 
-  addStorytelCityOverlay()
-  addAdlibrisCityOverlay()
-
   let aboutCityImage = document.createElement('img')
   aboutCityImage.src = `./Images/${city.imagesNormal[1]}`
 

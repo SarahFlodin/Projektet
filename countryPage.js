@@ -2,10 +2,10 @@
 
 function countryPage () {
   buildHeaderImage()
-  addAdlibris()
   createCountryButtons(COUNTRYBUTTON)
   addStorytel()
   buildFooter()
+  addAdlibris()
 }
 
 countryPage()

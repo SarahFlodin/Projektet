@@ -14,8 +14,6 @@ body {
   background-color: var(--beige);
   font-size: var(--fontSizeText);
   font-family: var(--fontStile);
-  border: black solid 2px;
-  border-radius: 2px;
 }
 
 h3 {
@@ -93,7 +91,6 @@ button:active {
 
 #hamburger {
   background-color: var(--green);
-  border: black solid 1px;
 }
 
 #navigationButtons {

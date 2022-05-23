@@ -2,59 +2,58 @@
   --beige: #fbefd1;
   --green: #c7e2bf;
   --darkgreen: #62a47c;
-  --fontStile: 'proxima-nova', sans-serif;
+  --fontStile: "proxima-nova", sans-serif;
   --fontSizeText: 16px;
   --fontSizeTitle: 20px;
 }
 
 #cityOverlay.cityOverlay {
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: var(--beige); /* Black fallback color */
-    background-color: var(--beige); /* Black w/opacity */
-    overflow-x: scroll; 
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: var(--beige); /* Black fallback color */
+  background-color: var(--beige); /* Black w/opacity */
+  overflow-x: scroll;
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
 
-  #programmeOverlay.programmeOverlay {
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: var(--beige); /* Black fallback color */
-    background-color: var(--beige); /* Black w/opacity */
-    overflow-x: scroll; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
+#programmeOverlay.programmeOverlay {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: var(--beige); /* Black fallback color */
+  background-color: var(--beige); /* Black w/opacity */
+  overflow-x: scroll; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
 
-  #cityOverlay > #addAdlibris {
-    position: relative;
-    top: 50px;
-  }
+#cityOverlay > #addAdlibris {
+  position: relative;
+  top: 50px;
+}
 
-  #cityOverlay > #addStorytel {
-    position: relative;
-    top: 650px;
-  }
+#cityOverlay > #addStorytel {
+  position: relative;
+  top: 650px;
+}
 
-  h3{
-    padding-top: 20px;
-  }
-  
-  #reviewCity {
-    padding-top: 30px;
-  }
+h3 {
+  padding-top: 20px;
+}
 
-  #cityOverlay > img {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+#reviewCity {
+  padding-top: 30px;
+}
 
+#cityOverlay > img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

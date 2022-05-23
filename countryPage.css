@@ -73,3 +73,26 @@ button {
 #title {
   padding: 10px;
 }
+
+.aboutCity{
+  background-color: var(--green);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.reviewCity{
+  background-color: var(--green);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.aboutCity > img{
+  width: 75%;
+  margin: auto;
+}

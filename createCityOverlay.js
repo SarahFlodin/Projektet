@@ -10,10 +10,10 @@ function clickCity (city) {
   let fieldDiv = document.createElement('div')
 
   let addDivStorytel = document.createElement('div')
-  addDivStorytel.classList.add("addStorytel")
+  addDivStorytel.classList.add('addStorytel')
 
   let addDivAdlibris = document.createElement('div')
-  addDivAdlibris.classList.add("addAdlibris")
+  addDivAdlibris.classList.add('addAdlibris')
 
   let programmesDiv = document.createElement('div')
   programmesDiv.id = 'programmes'
@@ -25,10 +25,10 @@ function clickCity (city) {
     document.getElementById('cityOverlay').innerHTML = ''
   }
   div.innerHTML = '&times;'
-  div.id = "closeButton";
+  div.id = 'closeButton'
 
-  let cityInfoDiv = document.createElement('div');
-  cityInfoDiv.classList.add("aboutCity");
+  let cityInfoDiv = document.createElement('div')
+  cityInfoDiv.classList.add('aboutCity')
 
   let aboutCity = document.createElement('div')
   aboutCity.innerHTML = `
@@ -47,7 +47,7 @@ function clickCity (city) {
      <p> Boende: ${reviewAccomodation(city)} / 5 ⭐  </p>
 
      `
-  reviewCity.classList.add("reviewCity");
+  reviewCity.classList.add('reviewCity')
 
   cityOverlay.append(text)
   cityOverlay.append(div)
@@ -115,4 +115,3 @@ function reviewAccomodation (city) {
   }
   return Math.round(sum / amountOfComments.length)
 }
-

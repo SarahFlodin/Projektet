@@ -37,7 +37,6 @@ function createFilterProgrammeElements (programmes) {
 
     let div = document.createElement('div')
 
-    
     div.onclick = function openProgrammeOverlay () {
       clickProgrammes(programmes[i])
       document.getElementById('programmeOverlay').style.width = '100%'
@@ -78,7 +77,6 @@ function filterProgrammesButtons (buttonObject, FIELDSBUTTON, city) {
 }
 
 function clickProgrammes (programme) {
-
   const title = document.createElement('h2')
   title.innerText = `${programme.name}`
 
@@ -89,21 +87,21 @@ function clickProgrammes (programme) {
     document.getElementById('programmeOverlay').innerHTML = ' '
   }
   x.innerHTML = '&times;'
-  x.id = "closeButton";
+  x.id = 'closeButton'
 
   programmeOverlay.append(title)
   programmeOverlay.append(x)
 
-  let aboutProgramme = document.createElement('div');
-  aboutProgramme.classList.add("aboutProgramme");
-  let reviewProgramme = document.createElement('div');
-  reviewProgramme.classList.add("reviewProgramme");
+  let aboutProgramme = document.createElement('div')
+  aboutProgramme.classList.add('aboutProgramme')
+  let reviewProgramme = document.createElement('div')
+  reviewProgramme.classList.add('reviewProgramme')
 
- let addDivStorytel = document.createElement('div')
-  addDivStorytel.classList.add("addStorytel")
+  let addDivStorytel = document.createElement('div')
+  addDivStorytel.classList.add('addStorytel')
 
   let addDivAdlibris = document.createElement('div')
-  addDivAdlibris.classList.add("addAdlibris")
+  addDivAdlibris.classList.add('addAdlibris')
 
   let sumStudent = programme.localStudents + programme.exchangeStudents
   let average =
@@ -134,7 +132,6 @@ function clickProgrammes (programme) {
 
   addStorytel()
   addAdlibris()
-  
+
   return programmeOverlay
 }
-

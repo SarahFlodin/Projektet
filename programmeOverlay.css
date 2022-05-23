@@ -9,53 +9,52 @@
 }
 
 #programmeOverlay.programmeOverlay {
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    overflow-x: scroll;
-    background-color: var(--beige); /* Black fallback color */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  overflow-x: scroll;
+  background-color: var(--beige); /* Black fallback color */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
 
-  #programmeOverlay > #addAdlibris {
-    position: relative;
-  }
+#programmeOverlay > #addAdlibris {
+  position: relative;
+}
 
-  #programmeOverlay > #addStorytel {
-    position: relative;
-    top: 600px;
-  }
-  
-  #closeButton {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    color: var(--darkgreen);
-  }
+#programmeOverlay > #addStorytel {
+  position: relative;
+  top: 600px;
+}
 
-  .aboutProgramme {
-    background-color: var(--green);
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+#closeButton {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: var(--darkgreen);
+}
+
+.aboutProgramme {
+  background-color: var(--green);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
 
-  }
-  
-  .reviewProgramme{
-    background-color: var(--green);
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+.reviewProgramme {
+  background-color: var(--green);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-  }
+}
 
-  h2{
-    padding: 70px 0px 0px 20px;
-  }
+h2 {
+  padding: 70px 0px 0px 20px;
+}

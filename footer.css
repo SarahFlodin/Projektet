@@ -1,23 +1,22 @@
 div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-  
 .aboutUsImage {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 
 #footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
 }
 
 #footer > div {
-    align-items: center;
-    margin: 20px;
+  align-items: center;
+  margin: 20px;
 }

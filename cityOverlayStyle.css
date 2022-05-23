@@ -37,25 +37,24 @@
   padding-top: 30px;
 }
 
-  #closeButton {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    color: var(--darkgreen);
-  }
+#closeButton {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: var(--darkgreen);
+}
 
-  .programmesBox {
-    display: flex;
-    border: var(--darkgreen) solid 0.2px;
-    margin: 10px 20px 10px 20px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #c7e2bf65;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-  }
-
+.programmesBox {
+  display: flex;
+  border: var(--darkgreen) solid 0.2px;
+  margin: 10px 20px 10px 20px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #c7e2bf65;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
 
 h3 {
   padding: 0px 20px;
@@ -63,7 +62,7 @@ h3 {
   margin-top: 10px;
 }
 
-h2{
+h2 {
   padding: 70px 0px 0px 20px;
 }
 
@@ -78,7 +77,6 @@ p {
   margin: auto;
 }
 
-
 .aboutProgramme {
   background-color: var(--green);
   border-radius: 20px;
@@ -86,22 +84,20 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.reviewProgramme{
+.reviewProgramme {
   background-color: var(--green);
   border-radius: 20px;
   margin: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-#fieldButtonsOverlay{
+#fieldButtonsOverlay {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -109,6 +105,4 @@ p {
   justify-content: center;
   align-items: center;
   padding: 5px;
-
 }
-

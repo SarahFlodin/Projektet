@@ -2,6 +2,7 @@ div {
     display: flex;
     flex-direction: column;
 }
+
   
 .aboutUsImage {
     border-radius: 50%;
@@ -13,9 +14,10 @@ div {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
+    justify-content: center;
 }
 
 #footer > div {
     align-items: center;
-    margin: 15px;
+    margin: 20px;
 }

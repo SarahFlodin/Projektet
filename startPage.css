@@ -2,6 +2,9 @@
   --beige: #fbefd1;
   --green: #c7e2bf;
   --darkgreen: #62a47c;
+  --fontStile: 'proxima-nova', sans-serif;
+  --fontSizeText: 17px;
+  --fontSizeTitle: 20px;
 }
 
 body {
@@ -19,11 +22,11 @@ div {
 #studentTwo,
 #studentThree {
   flex-direction: row;
-  margin: 10px;
   border-radius: 10px;
   padding: 5px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
   font-size: 14px;
   border: black solid 2px;
 }
@@ -36,13 +39,11 @@ div {
 #studentTwo img {
   height: 100%;
   width: 100%;
-  padding: 10px;
 }
 
 #studentThree img {
   height: 100%;
   width: 100%;
-  padding: 10px;
 }
 
 .aboutUsImage {
@@ -84,4 +85,11 @@ button:active {
 
 #hamburger {
   background-color: var(--green);
+}
+
+#navigationButtons{
+  padding: 10px;
+}
+#earlierStudents{
+  padding: 10px;
 }

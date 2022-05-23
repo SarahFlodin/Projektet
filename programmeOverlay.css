@@ -1,8 +1,11 @@
 :root {
-    --beige: #fbefd1;
-    --green: #c7e2bf;
-    --darkgreen: #62a47c;
-  }
+  --beige: #fbefd1;
+  --green: #c7e2bf;
+  --darkgreen: #62a47c;
+  --fontStile: 'proxima-nova', sans-serif;
+  --fontSizeText: 17px;
+  --fontSizeTitle: 20px;
+}
 
 #programmeOverlay.programmeOverlay {
     height: 100%;

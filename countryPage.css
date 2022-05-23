@@ -2,14 +2,13 @@
   --beige: #fbefd1;
   --green: #c7e2bf;
   --darkgreen: #79ab8d;
-  --fontStile: 'proxima-nova', sans-serif;
+  --fontStile: "proxima-nova", sans-serif;
   --fontSizeText: 16px;
   --fontSizeTitle: 20px;
 }
 
 body {
   margin: 0px;
-  width: 390px;
   background-color: var(--beige);
   font-family: var(--fontStile);
   border: black solid 2px;

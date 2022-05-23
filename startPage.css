@@ -3,14 +3,13 @@
   --green: #c7e2bf;
   --darkgreen: #62a47c;
   --greenOpacity: #c7e2bfb3;
-  --fontStile: 'proxima-nova', sans-serif;
+  --fontStile: "proxima-nova", sans-serif;
   --fontSizeText: 16px;
   --fontSizeTitle: 20px;
 }
 
 body {
   margin: 0px;
-  width: 390px;
   background-color: var(--beige);
   font-size: var(--fontSizeText);
   font-family: var(--fontStile);
@@ -26,7 +25,7 @@ p {
   font-size: var(--fontSizeText);
 }
 
-h4{
+h4 {
   margin-bottom: 0px;
   margin-top: 10px;
 }

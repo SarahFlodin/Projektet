@@ -38,7 +38,7 @@ button {
   display: flex;
   background-color: #c7e2bf8a;
   border: var(--darkgreen) dotted 0.2px;
-  margin: 5px;
+  margin: 15px;
   padding: 10px;
   justify-content: center;
   align-items: center;

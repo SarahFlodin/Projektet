@@ -27,6 +27,9 @@ function clickCity (city) {
   div.innerHTML = '&times;'
   div.id = "closeButton";
 
+  let cityInfoDiv = document.createElement('div');
+  cityInfoDiv.classList.add("aboutCity");
+
   let aboutCity = document.createElement('div')
   aboutCity.innerHTML = `
      <h3> Om Staden </h3>
@@ -44,10 +47,13 @@ function clickCity (city) {
      <p> Boende: ${reviewAccomodation(city)} / 5 ⭐  </p>
 
      `
+  reviewCity.classList.add("reviewCity");
+
   cityOverlay.append(text)
   cityOverlay.append(div)
-  cityOverlay.append(aboutCity)
-  cityOverlay.append(aboutCityImage)
+  cityOverlay.append(cityInfoDiv)
+  cityInfoDiv.append(aboutCity)
+  cityInfoDiv.append(aboutCityImage)
   cityOverlay.append(addDivStorytel)
   cityOverlay.append(reviewCity)
   cityOverlay.append(fieldDiv)

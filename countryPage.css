@@ -12,6 +12,8 @@ body {
   width: 390px;
   background-color: var(--beige);
   font-family: var(--fontStile);
+  border: black solid 2px;
+  border-radius: 2px;
 }
 
 h3 {
@@ -21,7 +23,7 @@ h3 {
 p {
   font-size: var(--fontSizeText);
 }
-button{
+button {
   font-size: var(--fontSizeText);
 }
 
@@ -31,7 +33,7 @@ button{
   gap: 10px;
 }
 
-#cities{
+#cities {
   display: flex;
 }
 
@@ -60,18 +62,18 @@ button{
   pointer-events: none;
 }
 
-#addStorytel{
+#addStorytel {
   width: 100%;
   position: relative;
   top: 20px;
 }
 
-#countryButtons{
+#countryButtons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#title{
+#title {
   padding: 10px;
 }

@@ -35,7 +35,7 @@ button {
 }
 
 .programmesBox {
-  border: black solid 0.5px;
+  border: var(--darkgreen) dotted 0.2px;
   margin: 10px 20px 10px 20px;
   border-radius: 5px;
   padding: 10px;

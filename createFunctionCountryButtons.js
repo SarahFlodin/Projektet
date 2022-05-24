@@ -50,6 +50,16 @@ const COUNTRYBUTTON = [
 ]
 
 // skapar länderknapparna
+//Skapar en funktion vid namn createCountryButtons med parametern(FIELDSBUTTON)
+//deklarerar en variabel som heter countryButtons och hämtar IDt "countryButtons"
+//skapar en for loop där det skapas en button för varje objekt i arrayen.
+//knappen innehåller text ifrån COUNTRYBUTTON där vi inuti loopen kallar på "korrekt" ämne. 
+//sedan skapar vi en eventListener som innehåller "click" och en funktion så att man kan klicka på "button".
+//i eventlistenern så skapas variabeln "foundCities" som anropar funktionen "filterCountryButtons" med parametrarna "COUNTRYBUTTON[i], COUNTRYBUTTON".
+//parametrarna hämtar information från arrayen så att funktionen kan returnera rätt.
+//sen anropas funktionen createCitiesFilterElements med parametern "foundCities". Foundcities gör att när man trycker på knappen så kommer rätt stadsboxar upp.
+//sen skapas det en toggle för när knappen är nedtryckt
+//sen appendas button till countryButtons.
 function createCountryButtons (COUNTRYBUTTON) {
   let countryButtons = document.getElementById('countryButtons')
 
@@ -66,6 +76,11 @@ function createCountryButtons (COUNTRYBUTTON) {
   }
 }
 
+//Gör så att landknapparna hålls nere när man trycker på dem.
+//Från början så är värdet i knappen false men när knappen blir tryckt så blir knappens värde true.
+//i variabeln countryArray så filtreras COUNTRYBUTTON arrayen och tar ut dem objekt som är true.
+//i variabeln idArray mappar man countryarray efter elementets id.
+//i returneringen så filtreras arrayen Cities och man matchar city IDt med land IDt.
 function filterCountryButtons (buttonObject, COUNTRYBUTTON) {
   if (buttonObject.selected) {
     buttonObject.selected = false

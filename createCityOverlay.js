@@ -1,5 +1,17 @@
 'use strict'
-
+//Skapar en overlay för cities
+//Skapar en function vid namn "clickCity" med en parameter "city" som innehåller cityId på den staden man klickar på 
+//Skapar en const där "text" alltid är konstant. Skapar ett "h2 element" innehållande "city.name" (städernas namn)
+//Sedan skapar vi divvar med "document.createElement" innehållande ämnena, annonser,program.
+//skapar även en div.onclick som då heter "closeCityOverlay" som ska stänga overlayen, detta görs genom att ändra style.width till = '0%'
+//sedan ska cityOverlay vara tom efter man klickat på "X" så vi hämtar först idet cityOverlay och i innerHTML gör den tom. 
+//sedan hämtar vi '&times' från "innerHTML" vilket då är "X" man klickar på för att stänga overlayen. 
+//Sedan deklarerar vi cityInfoDiv och skapar en div där vi anropar aboutCity och implementerar infon "om staden"
+//deklarerar aboutCity och skapar en div med innehållande "h3 om staden" samt en paragraf med text om staden.
+//deklarerar aboutCityImage och skapar ett img element där bilderna på städer skapas från "./Images/"
+//deklarerar reviewCity och skapar div innehållande en "h3 med omdöme" samt 3 paragrafer innehållande resencioner på Uteliv, Restauran och Boende.
+//sedan appendar vi allt som nämnts ovan och returnerar cityOverlay
+ 
 function clickCity (city) {
   console.log(city)
 
@@ -67,24 +79,28 @@ function clickCity (city) {
   return cityOverlay
 }
 
+//Skapar en funktion för de 3 olika recensions kategorierna "reviewOut" ,"reviewFood", "reviewAccomodation" 
+//I denna funktion skapar vi en loop för varje "kategori"
+//Looparnas syfte är att vi först har en tom array som "pushar" in innehållet(kommentarerna) om "omdömmet" i arrayen om staden matchar med city.id
+
 function reviewOut (city) {
-  let sum = 0
-  let amountOfComments = []
+  let sum = 0 //deklarerar sum och ger den värdet "0"
+  let amountOfComments = [] //tom array
   for (let x = 0; x < COMMENTS_CITY.length; x++) {
     if (COMMENTS_CITY[x].cityID == city.id) {
       let stars = COMMENTS_CITY[x].stars
-      sum = sum + stars.out
-      amountOfComments.push(COMMENTS_CITY[x])
+      sum = sum + stars.out 
+      amountOfComments.push(COMMENTS_CITY[x]) //man pushar in "omdömmet" i arrayen om staden matchar med cityid
     }
-  }
+  } //Om summan är = 0 ska det returneras "Saknar tyvärr omdöme"
   if (sum == 0) {
     return 'Saknar tyvärr omdöme'
   }
-  return Math.round(sum / amountOfComments.length)
+  return Math.round(sum / amountOfComments.length) //average 
 }
 
 function reviewFood (city) {
-  let sum = 0
+  let sum = 0 //deklarerar sum och ger den värdet "0"
   let amountOfComments = []
   for (let x = 0; x < COMMENTS_CITY.length; x++) {
     if (COMMENTS_CITY[x].cityID == city.id) {
@@ -92,15 +108,15 @@ function reviewFood (city) {
       sum = sum + stars.food
       amountOfComments.push(COMMENTS_CITY[x])
     }
-  }
+  }//Om summan är = 0 ska det returneras "Saknar tyvärr omdöme"
   if (sum == 0) {
     return 'Saknar tyvärr omdöme'
   }
-  return Math.round(sum / amountOfComments.length)
+  return Math.round(sum / amountOfComments.length)//average 
 }
 
 function reviewAccomodation (city) {
-  let sum = 0
+  let sum = 0 //deklarerar sum och ger den värdet "0"
   let amountOfComments = []
 
   for (let x = 0; x < COMMENTS_CITY.length; x++) {
@@ -109,9 +125,9 @@ function reviewAccomodation (city) {
       sum = sum + stars.accomodation
       amountOfComments.push(COMMENTS_CITY[x])
     }
-  }
+  }//Om summan är = 0 ska det returneras "Saknar tyvärr omdöme"
   if (sum == 0) {
     return 'Saknar tyvärr omdöme'
   }
-  return Math.round(sum / amountOfComments.length)
+  return Math.round(sum / amountOfComments.length) //average 
 }

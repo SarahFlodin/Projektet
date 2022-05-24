@@ -20,6 +20,14 @@ const HAMBURGER = [
 ]
 // Tydlig
 // Bygger hela hamburgarmenyn
+//funktionen hämtar en div med id "myNav" och tilldelar den en ny variabel "menuHamburger".
+//en for loop går igenom "HAMBURGER" arrayen. 
+//För varje objekt i arrayen skapas en div som får klassen "hamburgerContent".
+//Ett a element med variabeln "content" skapas.
+//"content" tilldelas en länk och textcontent.
+//sen appendar funktionen hamburgerContent till menuHamburger.
+//sen appendar funktionen content till hamburgerContent.
+//sen returnar funktionen menuHamburger.
 function buildHamburger () {
   let menuHamburger = document.getElementById('myNav')
   for (let i = 0; i < HAMBURGER.length; i++) {

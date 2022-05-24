@@ -1,6 +1,7 @@
 'use strict'
 
 // Knapparna till ämnen på ProgrammePage Overlay
+//Skapar en funktion med parametrarna Fieldbutton och city.
 function createFieldButtonsOverlay (FIELDSBUTTON, city) {
   let fieldButtons = document.getElementById('fieldButtonsOverlay')
 

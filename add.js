@@ -1,6 +1,7 @@
 'use strict'
 
-//Hämtar div som 
+//Hämtar div genom klassnamn, den tömmer diven, skapar ett img element och fyller med bild.
+//går igenom antal adlibris divar och appendar bild. 
 function addAdlibris () {
   let adlibris = document.getElementsByClassName('addAdlibris')
   adlibris.innerHTML = ''

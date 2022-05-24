@@ -1,11 +1,22 @@
 'use strict'
 
 // När man klickar på ett land filtreras städerna.
+//funktionen returnerar filtreringen av städerna som matchar med country id.
 function filterButtons (id) {
   return CITIES.filter(city => city.countryID == id)
 }
 
-// Det är denna som skapar alla boxarna till städerna
+//En funktion som skapar alla boxarna till städerna.
+//Variabeln "citiesDiv" skapas och väljer klassen cities som finns i html.
+//citiesDiv blir tom.
+//En for loop skapas och går igenom cities.
+//för varje objekt skapas en div med klassen "cityBox".
+//divven får en eventlistener som är "click" och en funktion som heter "openCityOverlay".
+//När man klickar på diven så ska "cityOverlay" och overlayens innehåll komma upp med clickCity funktionen.
+//variabeln image skapar ett img element.
+//divven får textContent med stadens namn.
+//variabeln image blir assignad en bild som hör ihop med staden.
+//image appendas till divven och divven appendas till "citiesDiv. 
 function createCitiesFilterElements (cities) {
   let citiesDiv = document.querySelector('#cities')
   citiesDiv.innerHTML = ''

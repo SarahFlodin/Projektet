@@ -1,4 +1,6 @@
 'use strict'
+
+//Hämtar div som 
 function addAdlibris () {
   let adlibris = document.getElementsByClassName('addAdlibris')
   adlibris.innerHTML = ''

@@ -1,6 +1,6 @@
 'use strict'
 
-// Om oss array som vi anropar i footer
+// Om oss array med namn och bildväg som vi anropar i footer
 const ABOUTUS = [
   {
     id: 0,

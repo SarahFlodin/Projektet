@@ -1,4 +1,14 @@
-// Skapar programoverlay och dess information
+//Skapar en overlay för program
+//Skapar en function vid namn "clickProgramme" med en parameter "programme" 
+//Skapar en const där "text" alltid är konstant. Skapar ett "h2 element" innehållande "programme.name" (programmens namn)
+//Sedan skapar vi divvar med "document.createElement" innehållande elementen. 
+//skapar även en div.onclick som då heter "closeProgrammeOverlay" som ska stänga overlayen, detta görs genom att ändra style.width till = '0%'
+//sedan ska programmeOverlay vara tom efter man klickat på "X" så vi hämtar först idet programmeOverlay och i innerHTML gör den tom. 
+//sedan hämtar vi '&times' från "innerHTML" vilket då är "X" man klickar på för att stänga overlayen. 
+//Sedan deklarerar vi aboutProgramme och skapar en div där vi anropar "aboutProgramme" och implementerar infon "om programmet"
+//deklarerar aboutProgramme och skapar en div med innehållande "h3 om programmet" samt paragrafer med text om Nivå, språk, studenter, antagningsbetyg i snitt.
+//deklarerar reviewProgramme och skapar div innehållande en "h3 med omdöme" samt 3 paragrafer innehållande resencioner på Lärare, Kurser och Studenter.
+//sedan appendar vi allt som nämnts ovan och returnerar cityOverlay
 function clickProgramme (programme) {
   document.getElementById('programmeOverlay')
 

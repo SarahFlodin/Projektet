@@ -1,5 +1,5 @@
 'use strict'
-
+// Skapar ämnesknapparna i overlayen
 function createFieldButtonsOverlay (FIELDSBUTTON, city) {
   let fieldButtons = document.getElementById('fieldButtonsOverlay')
 

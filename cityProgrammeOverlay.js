@@ -1,14 +1,5 @@
 'use strict'
 
-// Knapparna till ämnen på ProgrammePage Overlay
-//Skapar en funktion med parametrarna Fieldbutton från databasen och city.
-// Hämtar div med id fieldButtonOverlay och deklarerar i en ny variabel
-// Skapar en for loop, för längden i fieldsbutton arrayen så ska ..
-// För varje objekt skapas knappar av och dem tilldelas namn
-// Sätter ett eventlistener med click och en funktion - funktionen deklarerar en ny variebel som sparar hela fieldsobjektet, hela fieldsbutton arrayen samt city varje gång man klickar.
-// Kallar även på funktionen createFilterProgrammeElements där den sätter variabeln som parameter så den hämtar rätt program till ämnet(fieldsbutton[i]) och staden(city)
-// Knappen togglar classen button-active
-// fieldsButton appendar barnen button som är knapparna till ämnena
 function createFieldButtonsOverlay (FIELDSBUTTON, city) {
   let fieldButtons = document.getElementById('fieldButtonsOverlay')
 
@@ -29,20 +20,13 @@ function createFieldButtonsOverlay (FIELDSBUTTON, city) {
   }
 }
 
-// Skapar funtionen findUnies som ska hitta universitet som matchar med staden
-// Filtrerar CITIES i DB (databasen) hittar staden som matchar med id till parametern.
-// Returnerar en filtrering av alla univeristet som innehåller stadens ID, mapar ut universitetens id:n
+// Finner Universitetets id och matchar med staden
 function findUnies (id) {
   let city = DB.CITIES.find(city => city.id == id)
   return DB.UNIVERSITIES.filter(uni => uni.cityID == city.id).map(uni => uni.id)
 }
 
-// Skapar funktionen createFilterProgrammeElements som skapar dem klickbara programboxarna
-// Hämtar div med id programmes och lägger i en ny variabel programmesDiv
-// Skapar innehåll på programmesDiv
-// Skapar en for loop som går igenom programmes
-// Skapar funktionen findUniById som returnerar programmet man klickade på och matchar det med universitets.id
-// Skapar en div och ger den namnet div som även om man klickar på den kallar på funktionen openProgrammeOverlay (som ändrar bredden till 100%) och även clickProgrammes med parametern för programmes[i] vilket är den vi tyckt på.
+// Filtrering av programmen och skapande av programBoxar
  
 function createFilterProgrammeElements (programmes) {
   let programmesDiv = document.getElementById('programmes')
@@ -60,11 +44,6 @@ function createFilterProgrammeElements (programmes) {
       document.getElementById('programmeOverlay').style.width = '100%'
     }
 
-// Ger div en class "programmesBox" och get ett id som är samma som programmets id.
-// Skapar level variabeln genom att plocka up programmets id och dess level
-// Skapar uni variabel genom att leta i UNIVERSITET.find och använda funktionen findUnibyId som matchar programmet med universitetet.
-// Skapar innehåll till div med valda programmets namn, level och universitet
-// appendar programmeDiv i div
     div.classList.add('programmesBox')
     div.id = programmes[i].id
     const level = LEVELS[programmes[i].level]
@@ -79,11 +58,8 @@ function createFilterProgrammeElements (programmes) {
   }
 }
 
-//Gör så att landknapparna hålls nere när man trycker på dem.
-//Från början så är värdet i knappen false men när knappen blir tryckt så blir knappens värde true.
-// Variabeln fieldArray så filtreras FIELDBUTTON arrayen och tar ut dem objekt som är true.
-// Variabeln idArray mappar man fieldsarray efter elementets id.
 
+// Skapar ämnes knapparna och returnerar program som matchar stad och ämne
 function filterProgrammesButtons (buttonObject, FIELDSBUTTON, city) {
   if (buttonObject.selected) {
     buttonObject.selected = false
@@ -102,23 +78,8 @@ function filterProgrammesButtons (buttonObject, FIELDSBUTTON, city) {
       idArray.includes(programme.subjectID)
   )
 }
-// Skapar en overlay för program
-// Skapar en function vid namn "clickProgramme" med en parameter "programme" 
-// Skapar en const där "text" alltid är konstant. Skapar ett "h2 element" innehållande "programme.name" (programmens namn)
-// Sedan skapar vi divvar med "document.createElement" innehållande elementen. 
-// skapar även en div.onclick som då heter "closeProgrammeOverlay" som ska stänga overlayen, detta görs genom att ändra style.width till = '0%'
-// ProgrammeOverlay vara tom efter man klickat på "X" så vi hämtar först idet programmeOverlay och i innerHTML gör den tom. 
-// Hämtar '&times' från "innerHTML" vilket då är "X" man klickar på för att stänga overlayen. 
-// Skapar en div med classen addStorytel & en för add Adlibris för att få in reklamen
-// Sedan deklarerar vi aboutProgramme och skapar en div där vi anropar "aboutProgramme" och implementerar infon "om programmet"
-// Räknar ut summan på antal studenter genom att addera local students för programmet med exchange students för programmet [i].
-// Räknar ut average genom att gå igenom alla successRate och addera och dela de på hela succesRate "längden".
-// Språket hittar vi genom att ha .find som hittar de första språket som matchar med programme.language ifrån LANGUAGE arrayen och matchar de med lang.id.
-// Level hittar vi via att gå igenom LEVEL och finna de som matchar med program.level
-// Deklarerar aboutProgramme och skapar en div med innehållande "h3 om programmet" samt paragrafer med text om Nivå, språk, studenter, antagningsbetyg i snitt.
-// Deklarerar reviewProgramme och skapar div innehållande en "h3 med omdöme" samt 3 paragrafer innehållande resencioner på Lärare, Kurser och Studenter.
-// Appendar vi allt som nämnts ovan och kallar på adds funktionerna och returnerar programmeOverlay
 
+// Skapar en overlay för programmet med information
 function clickProgrammes (programme) {
   const title = document.createElement('h2')
   title.innerText = `${programme.name}`

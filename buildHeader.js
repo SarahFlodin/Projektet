@@ -1,5 +1,6 @@
 'use strict'
-// bygger loggan (jordklotet). Man kan klicka på loggan för att komma till startsidan osv
+// Skapar header
+
 function buildHeaderImage () {
   let header = document.getElementById('header')
   let headerImage = document.createElement('img')

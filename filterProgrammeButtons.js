@@ -27,8 +27,28 @@ function filterProgrammeButtons (buttonObject, FIELDSBUTTON) {
   return PROGRAMMES.filter(programme => idArray.includes(programme.subjectID))
 }
 
+// Funktion som skapar boxarna för programmen. Parametern i funktionen är programmes.
+// Vi deklarerar en variabel som får värdet programmesDiv och använder document.querySelector för att hämta diven med id programme. 
+// Vi tömmer diven för att ej få upp dubbla element 
+// Vi skapar sedan en for loop som går igenom arrayen av program och i denna skapar vi en funktion som heter findUnibyId som tar emot parametern universitet
+// Här returnerar vi det universitetet som matchar programmets id.
+// Deklarerar en variabel med värde div som skapar en div på HTML
+// Skapar en addEventListener till click och skapar en function som ska ta programmen genom rätt id
+// 
+// När vi klickar på denna div anropas funktionen openProgrammeOverlay som ej har någon parameter.
+// Här hämtar vi div id programmeOverlay från HTML och ger en bredd på 100%
+//  Vi addar diven programmesboxes till klasslist och säger att div id ska vara lika med programmens id. 
+// Vi deklarerar en permanent variabel (const) och ger den värde level som går igenom objektet LEVELS från databasen. 
+// Denna går igenom programmen och får ut levels. (Kandidat, master, doctorand)
+// Vi deklarerar en permanent variabel som får värdet uni.
+// Denna går igenom arrayen UNIVERSITIES och här använder vi arraymetoden find för att få fram universitet. 
+// I parantesen anropar vi funktionen findUnibyId
+// Vi skapar en div som skapar kontent till HTML filen. 
+// För att få ut namnen på programmen använder vi [i].name. 
+// För att få ut nivå har vi då det valda programmet.level för att få ut leveln. För att få ut universitetens namn har vi uni.name
+// <br> använder vi för att skapa mellanrum när man skrivver innerHTML
+//  Vi appendar programmesdiven 
 
-// Skapar programboxarna och rederar information
 function createFilterProgrammeElements (programmes) {
   let programmesDiv = document.querySelector('#programme')
   programmesDiv.innerHTML = ''

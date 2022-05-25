@@ -1,6 +1,13 @@
 'use strict'
-// Skapar footer
 
+// Tydlig
+// Footer som skapas och innehåller en "om oss" box
+//vi hämtar en div med id footer och tilldelar den en ny variabel "aboutUs".
+//Vi skapar innehållet till "aboutUs". Vi gör en for loop som går igenom vår "aboutus" array. 
+//för varje objekt i arrayen skapas en div och ett img element.
+//skriver ut en bild och namn för varje array objekt.
+//sen appendar vi det och ger bilderna en klass.
+//sen returnar det footern
 function buildFooter () {
   let aboutUs = document.getElementById('footer')
   aboutUs.innerHTML =

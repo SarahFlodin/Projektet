@@ -76,7 +76,11 @@ function createCountryButtons (COUNTRYBUTTON) {
   }
 }
 
-// Nedtryckta/valda knappar och returneringen av städer när man valt land
+//Gör så att landknapparna hålls nere när man trycker på dem.
+//Från början så är värdet i knappen false men när knappen blir tryckt så blir knappens värde true.
+//i variabeln countryArray så filtreras COUNTRYBUTTON arrayen och tar ut dem objekt som är true.
+//i variabeln idArray mappar man countryarray efter elementets id.
+//i returneringen så filtreras arrayen Cities och man matchar city IDt med land IDt.
 function filterCountryButtons (buttonObject, COUNTRYBUTTON) {
   if (buttonObject.selected) {
     buttonObject.selected = false

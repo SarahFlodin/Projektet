@@ -1,5 +1,16 @@
 'use strict'
-// Skapar en overlay för staden
+//Skapar en overlay för cities
+//Skapar en function vid namn "clickCity" med en parameter "city" som innehåller cityId på den staden man klickar på 
+//Skapar en const där "text" alltid är konstant. Skapar ett "h2 element" innehållande "city.name" (städernas namn)
+//Sedan skapar vi divvar med "document.createElement" innehållande ämnena, annonser,program.
+//skapar även en div.onclick som då heter "closeCityOverlay" som ska stänga overlayen, detta görs genom att ändra style.width till = '0%'
+//sedan ska cityOverlay vara tom efter man klickat på "X" så vi hämtar först idet cityOverlay och i innerHTML gör den tom. 
+//sedan hämtar vi '&times' från "innerHTML" vilket då är "X" man klickar på för att stänga overlayen. 
+//Sedan deklarerar vi cityInfoDiv och skapar en div där vi anropar aboutCity och implementerar infon "om staden"
+//deklarerar aboutCity och skapar en div med innehållande "h3 om staden" samt en paragraf med text om staden.
+//deklarerar aboutCityImage och skapar ett img element där bilderna på städer skapas från "./Images/"
+//deklarerar reviewCity och skapar div innehållande en "h3 med omdöme" samt 3 paragrafer innehållande resencioner på Uteliv, Restauran och Boende.
+//sedan appendar vi allt som nämnts ovan och returnerar cityOverlay
  
 function clickCity (city) {
   console.log(city)
